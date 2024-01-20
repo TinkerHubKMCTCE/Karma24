@@ -24,6 +24,12 @@ const Hero = () => {
         <p className="mt-6 text-center text-xl uppercase font-medium tracking-widest">
           what goes around comes around
         </p>
+        <div className="flex justify-center gap-10 mt-10">
+          <Countdown targetDate={targetDate} title="Days" />
+          <Countdown targetDate={targetDate} title="Hours" />
+          <Countdown targetDate={targetDate} title="Minutes" />
+          <Countdown targetDate={targetDate} title="Seconds" />
+        </div>
       </div>
     </div>
   );
