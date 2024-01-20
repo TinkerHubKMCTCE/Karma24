@@ -1,0 +1,11 @@
+#hero {
+  background: url("../../assets/hero-bg.svg") no-repeat center center/cover;
+}
+
+.desc {
+  font-weight: 700;
+  font-style: italic;
+  background: linear-gradient(90deg, #8eff09, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
