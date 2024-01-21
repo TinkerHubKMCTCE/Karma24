@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inversionz: ["Inversionz", "sans-serif"],
+        orbitron: ["Orbitron", "sans-serif"],
+      },
+    },
   },
   fontFamily: {
     sans: ["Poppins", "sans-serif"],

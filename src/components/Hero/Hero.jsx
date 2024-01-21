@@ -21,10 +21,10 @@ const Hero = () => {
           Techno Cultural Extravaganza
         </p>
         <img className="max-w-xl mx-auto mt-6 w-full" src={karma24} alt="KARMA'24" />
-        <p className="mt-6 text-center text-xl uppercase font-medium tracking-widest">
+        <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium">
           what goes around comes around
         </p>
-        <div className="flex justify-center gap-10 mt-10 flex-wrap">
+        <div className="grid grid-cols-4 gap-4 md:gap-10 mt-10 max-w-2xl mx-auto">
           <Countdown targetDate={targetDate} title="Days" />
           <Countdown targetDate={targetDate} title="Hours" />
           <Countdown targetDate={targetDate} title="Minutes" />

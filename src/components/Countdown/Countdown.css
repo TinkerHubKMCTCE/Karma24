@@ -18,14 +18,15 @@
 
 .countdown-title {
   font-size: 16px;
+  letter-spacing: -5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .countdown-circle {
     width: 60px;
     height: 60px;
     line-height: 54px;
-    font-size: 20px;
+    font-size: 16px;
     border: 3px solid #8eff09;
   }
 }
