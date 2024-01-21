@@ -44,10 +44,16 @@ const Countdown = ({ targetDate, title }) => {
     }
   };
 
+  const timeout = getTimeUnit() < 0 ? "0" : getTimeUnit().toString().padStart(2, "0");
+
   return (
     <div className="countdown-item">
-      <div className="countdown-circle">{getTimeUnit()}</div>
-      <div className="countdown-title">{title}</div>
+      <div className="countdown-circle">
+        <p className="font-orbitron">{timeout}</p>
+      </div>
+      <div className="countdown-title font-inversionz  uppercase text-2xl md:text-3xl">
+        {title}
+      </div>
     </div>
   );
 };
