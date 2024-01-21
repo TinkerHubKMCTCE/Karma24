@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Inversionz;
-  src: url("fonts/Inversionz.ttf") format("truetype");
+  src: url("public/fonts/Inversionz.ttf") format("truetype");
 }
 
 :root {
