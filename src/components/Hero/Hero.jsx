@@ -12,7 +12,7 @@ const Hero = () => {
     <div id={styles.hero} className="min-h-screen flex flex-col p-10">
       <div className="flex justify-between items-center">
         <img src={KmctLogo} className="h-16" alt="KMCT Logo" />
-        <h3 className="text-4xl">KMCT COLLEGE OF ENGINEERING</h3>
+        <h3 className="text-xl text-center md:text-3xl">KMCT COLLEGE OF ENGINEERING</h3>
         <img src={KarmaLogo} className="h-16" alt="KMCT Logo" />
       </div>
       <div className="my-auto py-10">
@@ -20,11 +20,11 @@ const Hero = () => {
         <p className={`${styles.desc} text-center text-3xl`}>
           Techno Cultural Extravaganza
         </p>
-        <img className="max-w-xl mx-auto mt-6" src={karma24} alt="KARMA'24" />
-        <p className="mt-6 text-center text-xl uppercase font-medium tracking-widest">
+        <img className="max-w-xl mx-auto mt-6 w-full" src={karma24} alt="KARMA'24" />
+        <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium">
           what goes around comes around
         </p>
-        <div className="flex justify-center gap-10 mt-10">
+        <div className="grid grid-cols-4 gap-4 md:gap-10 mt-10 max-w-2xl mx-auto">
           <Countdown targetDate={targetDate} title="Days" />
           <Countdown targetDate={targetDate} title="Hours" />
           <Countdown targetDate={targetDate} title="Minutes" />
