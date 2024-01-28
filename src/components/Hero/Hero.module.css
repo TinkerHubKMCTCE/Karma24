@@ -1,6 +1,7 @@
-#hero {
-  background: url("../../assets/hero-bg.svg") no-repeat center center/cover;
-}
+/* #hero {
+  background: url("../../assets/hero-bg-grid.svg"),url("../../assets/hero-bg-texture.svg") no-repeat center center/cover;
+  background-color: black;
+} */
 
 .desc {
   font-weight: 700;
@@ -8,4 +9,9 @@
   background: linear-gradient(90deg, #8eff09, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  #title {
+    padding: 110px;
+  }
 }
