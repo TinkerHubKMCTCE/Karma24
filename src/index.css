@@ -9,6 +9,11 @@
   src: url("/public/fonts/Inversionz.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: RetroTeam;
+  src: url("/public/fonts/Retro-Team.otf") format("opentype");
+}
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   /* line-height: 1.5; */
@@ -25,4 +30,15 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.big-green-title {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 8rem;
+  /* gradient 95fe1a -> cffe97 */
+  background: linear-gradient(to right, #95fe1a 0%, #cffe97 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
