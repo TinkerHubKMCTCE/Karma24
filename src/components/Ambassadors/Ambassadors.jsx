@@ -1,6 +1,5 @@
-import karma24 from "../../assets/karma24.svg";
 import styles from "./Ambassadors.module.css";
-import ambassador from "../../assets/ambassador.svg"
+import ambassador from "../../assets/ambassador.svg";
 
 
 const Ambassadors = () => {
@@ -10,7 +9,7 @@ const Ambassadors = () => {
           <div className="w-3/4">
             <img className="transform scale-75 mx-auto" src={ambassador} alt="BOX" /> 
           </div>
-          <div className="grid place-items-center">
+          <div className="grid place-items-center ">
           <h1 id={styles.heading} className="text-5xl text-center font-bold bg-gradient-to-r from-[#A3FF36] to-[#C2FF7B] text-transparent bg-clip-text mb-4">Campus Ambassadors  Program</h1>
           <p className="text-justify mt-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
