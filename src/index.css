@@ -30,6 +30,8 @@
 body {
   margin: 0;
   padding: 0;
+  background: url("assets/hero-bg-grid.svg"),url("assets/hero-bg-texture.svg") no-repeat center center/cover;
+  background-color: black;
 }
 
 .big-green-title {
