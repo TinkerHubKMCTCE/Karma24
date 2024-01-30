@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <img src={KarmaLogo} className="h-16 ml-16" alt="KarmaLogo" />
 
-      <ul className='hidden md:flex'>
+      <ul className='hidden lg:flex'>
         {navItems.map(item => (
           <li
           key={item.id}
@@ -54,7 +54,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div onClick={handleNav} className='block md:hidden'>
+      <div onClick={handleNav} className='block lg:hidden'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={40} />}
       </div>
 
