@@ -10,6 +10,7 @@ export default {
       },
       colors: {
         "karma-blue": "#09d3ff",
+        "karma-green": "#8EFF09"
       },
     },
   },

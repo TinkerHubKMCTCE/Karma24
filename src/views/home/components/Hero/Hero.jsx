@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import karma24 from "../../../../assets/karma24.svg";
 import budha from "../../../../assets/budha.svg"
 import styles from "./Hero.module.css";
