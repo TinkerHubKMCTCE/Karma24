@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const LoginView = () => {
   return (
     <section className=" bg-black">
