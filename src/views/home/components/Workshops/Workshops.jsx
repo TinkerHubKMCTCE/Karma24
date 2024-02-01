@@ -2,6 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import WorkshopItem from "./WorkshopItem";
 
+import caddImage from "../../../../assets/workshops/workshop-cadd.jpg";
+import evImage from "../../../../assets/workshops/workshop-ev.jpg";
+import cyberImage from "../../../../assets/workshops/workshop-cyber.jpg";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,24 +18,34 @@ import { Navigation } from "swiper/modules";
 const WorkshopsSection = () => {
   const workshops = [
     {
+      id: "1",
       title: "CADD MODELLING Workshop",
-      image:
-        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2729120.png",
+      image: caddImage,
     },
     {
+      id: "2",
       title: "ELECTRONIC VEHICLE Workshop",
-      image:
-        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F962%2F678%2F481%2Felectric-car-electric-cars-5k-honda-urban-ev-wallpaper-preview.jpg",
+      image: evImage,
     },
     {
+      id: "3",
       title: "CYBERSECURITY Workshop",
-      image:
-        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2691479.jpg",
+      image: cyberImage,
     },
     {
-      title: "INTERNET OF THINGS Workshop",
-      image:
-        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2005179.jpg",
+      id: "4",
+      title: "CADD MODELLING Workshop",
+      image: caddImage,
+    },
+    {
+      id: "5",
+      title: "ELECTRONIC VEHICLE Workshop",
+      image: evImage,
+    },
+    {
+      id: "6",
+      title: "CYBERSECURITY Workshop",
+      image: cyberImage,
     },
   ];
 
@@ -41,17 +55,25 @@ const WorkshopsSection = () => {
         <h2 className="big-green-title  mb-4">Workshops</h2>
         <div className="swiper-container px-16 max-w-7xl mx-auto">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={40}
             loop={true}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             }}
+            breakpoints={{
+              1024: {
+                slidesPerView: 2,
+              },
+              1280: {
+                slidesPerView: 3,
+              },
+            }}
             modules={[Navigation]}
           >
             {workshops.map((workshop) => (
-              <SwiperSlide>
+              <SwiperSlide key={workshop.id}>
                 <WorkshopItem title={workshop.title} image={workshop.image} />
               </SwiperSlide>
             ))}
