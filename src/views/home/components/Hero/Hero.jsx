@@ -1,6 +1,5 @@
-import karma24 from "../../assets/karma24.svg";
-import budha from "../../assets/budha.svg"
-
+import karma24 from "../../../../assets/karma24.svg";
+import budha from "../../../../assets/budha.svg"
 import styles from "./Hero.module.css";
 import Countdown from "../Countdown/Countdown";
 
@@ -8,7 +7,8 @@ const Hero = () => {
   const targetDate = new Date("2024-03-01T00:00:00");
 
   return (
-    <div id={styles.hero} className="min-h-screen flex flex-col">
+    <div className="container mx-auto px-10">
+      <div id={styles.hero} className="min-h-screen flex flex-col">
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-6"  id={styles.title}>
           <div className="grid place-items-center mt-12">
@@ -31,6 +31,7 @@ const Hero = () => {
           <Countdown targetDate={targetDate} title="Seconds" />
         </div>
       </div>
+    </div>
     </div>
   );
 };

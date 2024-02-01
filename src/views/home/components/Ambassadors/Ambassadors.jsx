@@ -1,16 +1,17 @@
 import styles from "./Ambassadors.module.css";
-import ambassador from "../../assets/ambassador.svg";
+import ambassador from "../../../../assets/ambassador.svg";
 
 
-const Ambassadors = () => {
+const AmbassadorsSection = () => {
     return (
-      <div id={styles.ambassadors} className="flex justify-between pt-32 pb-32">
+      <div className="container mx-auto px-4">
+        <div id={styles.ambassadors} className="flex justify-between pb-32">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 mr-8 mt-20 ml-8">
           <div className="w-3/4">
             <img className="transform scale-75 mx-auto" src={ambassador} alt="BOX" /> 
           </div>
           <div className="grid place-items-center ">
-          <h1 id={styles.heading} className="text-5xl text-center font-bold bg-gradient-to-r from-[#A3FF36] to-[#C2FF7B] text-transparent bg-clip-text mb-4">Campus Ambassadors  Program</h1>
+          <h1 id={styles.heading} className="text-5xl text-center font-bold bg-gradient-to-r from-[#A3FF36] to-[#C2FF7B] text-transparent bg-clip-text mb-4 leading-relaxed">Campus Ambassadors  Program</h1>
           <p className="text-justify mt-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Rerum a in quo maxime reiciendis ducimus at consequuntur 
@@ -30,7 +31,8 @@ const Ambassadors = () => {
           </div>
         </div>
       </div>
+      </div>
     );
   };
   
-  export default Ambassadors;
+  export default AmbassadorsSection;

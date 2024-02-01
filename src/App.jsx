@@ -1,17 +1,21 @@
-import Hero from "./components/Hero/Hero";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import Home from "./views/home/Home";
 import Navbar from "./components/Navbar/Navbar";
-import Ambassadors from "./components/Ambassadors/Ambassadors";
-import Workshops from "./components/Workshops/Workshops";
+import LoginView from "./views/home/components/Ambassadors/login";
+import MainLayout from "./layouts/MainLayout";
+
+const router = createBrowserRouter([
+  { path: "/", element: <MainLayout />,
+  children: [
+    { path: "/", element: <Home /> },
+    { path: "/login", element: <LoginView /> },
+  ]
+ },
+]);
 
 function App() {
-  return (
-    <div className="min-h-screen bg-black">
-      <Navbar />
-      <Hero />
-      <Ambassadors />
-      <Workshops />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

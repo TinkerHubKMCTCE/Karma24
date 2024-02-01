@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import KarmaLogo from "../../assets/karma-logo.svg";
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -24,12 +25,12 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 2, text: 'Events' },
-    { id: 3, text: 'Workshops' },
-    { id: 4, text: 'Proshow' },
-    { id: 5, text: 'Tickets' },
-    { id: 6, text: 'Ambassadors'}
+    { id: 1, text: 'Home', link: '/' },
+    { id: 2, text: 'Events', link: 'www.google.com' },
+    { id: 3, text: 'Workshops', link: 'www.google.com' },
+    { id: 4, text: 'Proshow', link: 'www.google.com' },
+    { id: 5, text: 'Tickets', link: 'www.google.com' },
+    { id: 6, text: 'Ambassadors', link: '/login'}
   ];
 
   return (
@@ -42,15 +43,15 @@ const Navbar = () => {
 
       <ul className='hidden lg:flex'>
         {navItems.map(item => (
-          <li
+        <NavLink
+          to={item.link}
           key={item.id}
-          className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
-            item.text === 'Ambassadors' ? 'bg-[#8EFF09] hover:text-white hover:bg-[#09D3FF] px-8 mr-10 text-black' : ''
+                    className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
+            item.text === 'Ambassadors' ? 'bg-[#8EFF09] hover:text-black px-8 mr-10 text-black' : ''
             
-          }`}
-        >
+          }`}>
           {item.text}
-        </li>
+          </NavLink>
         ))}
       </ul>
 
