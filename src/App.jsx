@@ -1,15 +1,11 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import Ambassadors from "./components/Ambassadors/Ambassadors";
-import Workshops from "./components/Workshops/Workshops";
+import Home from './views/home/Home'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
-      <Hero />
-      <Ambassadors />
-      <Workshops />
+      <Home />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import "./Workshops.css";
 
 import { Navigation } from "swiper/modules";
 
-const Workshops = () => {
+const WorkshopsSection = () => {
   const workshops = [
     {
       title: "CADD MODELLING Workshop",
@@ -80,4 +80,4 @@ const Workshops = () => {
   );
 };
 
-export default Workshops;
+export default WorkshopsSection;
