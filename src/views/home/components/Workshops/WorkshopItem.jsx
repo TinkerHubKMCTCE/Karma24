@@ -10,7 +10,7 @@ const WorkshopItem = ({ title, image }) => {
         backgroundPosition: "center",
       }}
     >
-      <h3 className="text-karma-blue font-bold font-retroTeam text-4xl">{title}</h3>
+      <h3 className="text-karma-blue font-bold font-retroTeam text-3xl sm:text-4xl">{title}</h3>
     </div>
   );
 };

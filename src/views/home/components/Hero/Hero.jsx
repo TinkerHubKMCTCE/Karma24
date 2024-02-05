@@ -1,18 +1,16 @@
 import karma24 from "../../../../assets/karma24.svg";
 import budha from "../../../../assets/budha.svg";
-import styles from "./Hero.module.css";
 import Countdown from "../Countdown/Countdown";
 
 const Hero = () => {
   const targetDate = new Date("2024-03-01T00:00:00");
 
   return (
-    <div className="container mx-auto pt-10 pb-20">
-      <div id={styles.hero} className="h-screen max-h-fit flex flex-col">
+    <div className="container mx-auto pb-20">
+      <div className="h-fit flex flex-col">
         <div className="">
           <div
-            className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-6"
-            id={styles.title}
+            className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-6 px-8 py-12 lg:py-32"
           >
             <div className="grid place-items-center mt-12">
               <img className="max-w-xl mx-auto w-full" src={karma24} alt="KARMA'24" />
