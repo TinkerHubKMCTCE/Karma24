@@ -46,10 +46,8 @@ const Navbar = () => {
           <Link to="/">
             <img
               src={KarmaLogo}
-              height={scrollBackground ? 44 : 68}
-              width={scrollBackground ? 44 : 68}
               className={`p-2 lg:py-4 transition-all duration-500 ease-in-out h-16 w-16${
-                scrollBackground ? "h-16 w-16" : "lg:h-24 lg:w-24"
+                scrollBackground ? "" : "transform scale-125 w-24"
               }`}
               alt="KarmaLogo"
             />

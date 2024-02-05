@@ -51,9 +51,9 @@ const WorkshopsSection = () => {
 
   return (
     <>
-      <div className="container mx-auto py-32 px-2">
+      <div className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
         <h2 className="big-green-title  mb-4">Workshops</h2>
-        <div className="swiper-container px-8 max-w-7xl mx-auto">
+        <div className="swiper-container px-10 mx-auto">
           <Swiper
             slidesPerView={1}
             spaceBetween={40}
@@ -63,7 +63,7 @@ const WorkshopsSection = () => {
               prevEl: ".swiper-button-prev",
             }}
             breakpoints={{
-              1024: {
+              980: {
                 slidesPerView: 2,
               },
               1280: {

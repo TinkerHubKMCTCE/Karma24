@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center w-screen pb-10 pt-24 footer">
+    <footer className="flex flex-col items-center w-screen mt-24 p-4 footer">
       <div className="container max-w-screen-xl m-4 mb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 w-full justify-between gap-10">
         {/* lg:grid-cols-[118px_94px_150px_171px] */}
         <div className="">
@@ -75,12 +75,12 @@ function Footer() {
           <h1>2020-2024</h1>
         </div>
       </div>
-      <hr className="w-full max-w-screen-xl" />
-      <div className="grid grid-cols-1 lg:grid-cols-3 w-full pt-[46px] gap-10 container max-w-screen-xl m-4">
+      <hr className="w-full max-w-screen-xl divider" />
+      <div className="flex flex-col sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8">
         <div className="flex justify-center lg:justify-start ">
           <img src={karma_logo} alt="karma" className="w-[100px] h-[110px]" />
         </div>
-        <div className="flex justify-center pt-[8px]">
+        <div className="flex justify-center">
           <a href="">
             <h1 className="px-[20px]">Terms</h1>
           </a>
@@ -91,7 +91,7 @@ function Footer() {
             <h1 className="px-[20px]">Cookies</h1>
           </a>
         </div>
-        <div className="flex justify-center lg:justify-end pb-[50px]">
+        <div className="flex">
           <a className="icon-container" href="">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
