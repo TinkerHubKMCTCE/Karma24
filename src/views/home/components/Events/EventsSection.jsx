@@ -11,7 +11,6 @@ import proshowImage from "../../../../assets/events/event-proshow.jpg";
 import vrImage from "../../../../assets/events/event-vr.jpg";
 import workshopImage from "../../../../assets/events/event-workshop.jpg";
 
-import WorkshopItem from "../Workshops/WorkshopItem";
 import EventCard from "./components/EventCard";
 
 const EventsSection = () => {
@@ -45,9 +44,9 @@ const EventsSection = () => {
 
   return (
     <>
-      <div className="container mx-auto py-32 px-4">
-        <h2 className="big-green-title  mb-4">Events</h2>
-        <div className="swiper-container max-w-7xl mx-auto">
+      <div className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
+        <h2 className="big-green-title mb-4">Events</h2>
+        <div className="swiper-container px-10">
           <Swiper
             slidesPerView={1}
             spaceBetween={40}
@@ -57,7 +56,7 @@ const EventsSection = () => {
               prevEl: ".swiper-button-prev",
             }}
             breakpoints={{
-              1024: {
+              980: {
                 slidesPerView: 2,
               },
               1280: {

@@ -33,60 +33,66 @@ const Navbar = () => {
   ];
 
   return (
-    <div
-      className={`sticky top-0 flex justify-between items-center h-24 w-full text-white text-lg z-20 px-6 ${
-        scrollBackground ? "bg-[#000000] bg-opacity-80" : ""
-      }`}
-    >
-      <Link to="/">
-        <img src={KarmaLogo} className="h-16" alt="KarmaLogo" />
-      </Link>
-
-      <ul className="hidden lg:flex">
-        {navItems.map((item) => (
-          <NavLink
-            to={item.link}
-            key={item.id}
-            className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
-              item.text === "Ambassadors"
-                ? "bg-[#8EFF09] hover:text-black px-8 mr-10 text-black"
-                : ""
-            }`}
-          >
-            {item.text}
-          </NavLink>
-        ))}
-      </ul>
-
-      <div onClick={handleNav} className="block lg:hidden">
-        {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
-      </div>
+    <>
       <div
-        className={`fixed ease-in-out w-[80%] duration-500 top-0 bottom-0 z-10 ${
-          nav ? "lg:hidden left-0 border-r border-r-gray-900" : "left-[-100%]"
+        className="sticky top-0 z-40 bg-[#000000] bg-opacity-30"
+        style={{
+          backdropFilter: "blur(20px)",
+        }}
+      >
+        <div
+          className={`container max-w-screen-xl mx-auto flex justify-between items-center w-full text-white text-lg px-4`}
+        >
+          <Link to="/">
+            <img
+              src={KarmaLogo}
+              className={`p-2 lg:py-4 transition-all duration-500 ease-in-out h-16 w-16${
+                scrollBackground ? "" : "transform scale-125 w-24"
+              }`}
+              alt="KarmaLogo"
+            />
+          </Link>
+
+          <ul className="hidden lg:flex">
+            {navItems.map((item) => (
+              <NavLink
+                to={item.link}
+                key={item.id}
+                className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
+                  item.text === "Ambassadors"
+                    ? "bg-[#8EFF09] hover:text-black px-8 mr-10 text-black"
+                    : ""
+                }`}
+              >
+                {item.text}
+              </NavLink>
+            ))}
+          </ul>
+          <div onClick={handleNav} className="block lg:hidden">
+            {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`fixed ease-in-out  duration-500 top-0 bottom-0 z-40 ${
+          nav ? "lg:hidden left-0 border-r border-r-gray-800" : "left-[-100%]"
         }`}
         style={{
           backdropFilter: "blur(20px)",
         }}
       >
-        <Link to="/"
-        onClick={handleNav}
-        >
+        <Link to="/" onClick={handleNav}>
           <img src={KarmaLogo} className="h-16 ml-6 mt-4" alt="KarmaLogo" />
         </Link>
-        <ul
-          className="flex flex-col mt-8"
-          style={{
-            backdropFilter: "blur(20px)",
-          }}
-        >
+        <ul className="flex flex-col mt-8">
           {navItems.map((item) => (
             <NavLink
               onClick={handleNav}
               to={item.link}
-              className={`p-4 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
+              className={`p-4 hover:text-karma-green text-2xl rounded-xl px-6 cursor-pointer duration-300 ${
                 item.text === "Ambassadors"
-                  ? "bg-[#8EFF09] hover:text-white hover:bg-[#09D3FF] px-8 mt-2 mx-6 text-black text-xl grid place-items-center"
+                  ? "bg-[#8EFF09] hover:text-white hover:bg-karma-blue px-8 mt-2 mx-6 text-black text-xl grid place-items-center"
                   : ""
               }`}
             >
@@ -95,7 +101,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
