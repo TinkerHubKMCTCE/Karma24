@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed flex justify-between items-center h-24 w-full mx-auto px-2 text-white text-lg m-5 ${
+      className={`fixed flex justify-between items-center h-24 w-full mx-auto px-2 text-white text-lg z-20 m-5 ${
         scrollBackground ? 'bg-[#000000] bg-opacity-60 rounded-xl m-6' : ''
       }`}
     >
@@ -69,13 +69,14 @@ const Navbar = () => {
         <img src={KarmaLogo} className="h-16 ml-16 mt-4" alt="KarmaLogo" />
 
         {navItems.map(item => (
+          
           <li
             key={item.id}
             className={`mt-2 p-4 border-b border-gray-600 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
-              item.text === 'Ambassadors' ? 'bg-[#8EFF09] hover:text-white hover:bg-[#09D3FF] px-8 mt-10 ml-6 mr-6 text-black text-xl grid place-items-center'  : ''
+              item.text === 'Ambassadors' ? 'bg-[#8EFF09] hover:text-black px-8 mt-10 ml-6 mr-6 text-black text-xl grid place-items-center'  : ''
               
-            }`}
-          >
+            }`}>
+          
             {item.text}
           </li>
         ))}

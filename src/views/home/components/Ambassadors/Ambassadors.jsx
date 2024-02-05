@@ -7,7 +7,7 @@ const AmbassadorsSection = () => {
       <div className="container mx-auto px-4">
         <div id={styles.ambassadors} className="flex justify-between pb-32">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 mr-8 mt-20 ml-8">
-          <div className="w-3/4">
+          <div className="w-3/4 z-10">
             <img className="transform scale-75 mx-auto" src={ambassador} alt="BOX" /> 
           </div>
           <div className="grid place-items-center ">

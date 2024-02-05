@@ -3,7 +3,7 @@ import "./Workshops.css";
 const WorkshopItem = ({ title, image }) => {
   return (
     <div
-      className="p-8 rounded-3xl mx-auto workshop-item"
+      className="p-8 rounded-3xl mx-auto workshop-item max-w-xs"
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
