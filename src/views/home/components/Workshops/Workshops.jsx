@@ -51,9 +51,9 @@ const WorkshopsSection = () => {
 
   return (
     <>
-      <div className="container mx-auto py-32 px-10">
+      <div className="container mx-auto py-32 px-2">
         <h2 className="big-green-title  mb-4">Workshops</h2>
-        <div className="swiper-container px-16 max-w-7xl mx-auto">
+        <div className="swiper-container px-8 max-w-7xl mx-auto">
           <Swiper
             slidesPerView={1}
             spaceBetween={40}

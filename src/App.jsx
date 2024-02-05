@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./views/home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import LoginView from "./views/home/components/Ambassadors/login";
+import SignupView from "./views/home/components/Ambassadors/signup";
 import MainLayout from "./layouts/MainLayout";
 
 const router = createBrowserRouter([
@@ -10,6 +11,7 @@ const router = createBrowserRouter([
   children: [
     { path: "/", element: <Home /> },
     { path: "/login", element: <LoginView /> },
+    { path: "/signup", element: <SignupView /> },
   ]
  },
 ]);

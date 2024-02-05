@@ -45,9 +45,9 @@ const EventsSection = () => {
 
   return (
     <>
-      <div className="container mx-auto py-32 px-10">
+      <div className="container mx-auto py-32 px-4">
         <h2 className="big-green-title  mb-4">Events</h2>
-        <div className="swiper-container px-16 max-w-7xl mx-auto">
+        <div className="swiper-container max-w-7xl mx-auto">
           <Swiper
             slidesPerView={1}
             spaceBetween={40}

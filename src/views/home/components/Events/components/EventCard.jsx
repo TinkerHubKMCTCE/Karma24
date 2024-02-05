@@ -10,7 +10,7 @@ const EventCard = ({ title, image }) => {
         backgroundPosition: "center",
       }}
     >
-      <h3 className="text-white font-bold font-retroTeam text-5xl">{title}</h3>
+      <h3 className="text-white font-bold font-retroTeam text-3xl sm:text-5xl">{title}</h3>
     </div>
   );
 };

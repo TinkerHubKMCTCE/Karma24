@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import KarmaLogo from "../../assets/karma-logo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -34,11 +34,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed flex justify-between items-center h-24 w-full px-2 text-white text-lg m-5 ${
-        scrollBackground ? "bg-[#000000] bg-opacity-90 rounded-xl m-6" : ""
+      className={`sticky top-0 flex justify-between items-center h-24 w-full text-white text-lg z-20 px-6 ${
+        scrollBackground ? "bg-[#000000] bg-opacity-80" : ""
       }`}
     >
-      <img src={KarmaLogo} className="h-16 ml-16" alt="KarmaLogo" />
+      <Link to="/">
+        <img src={KarmaLogo} className="h-16" alt="KarmaLogo" />
+      </Link>
 
       <ul className="hidden lg:flex">
         {navItems.map((item) => (
@@ -57,31 +59,42 @@ const Navbar = () => {
       </ul>
 
       <div onClick={handleNav} className="block lg:hidden">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={40} />}
+        {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
       </div>
-
-      <ul
-        className={
-          nav
-            ? "fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] mr-8"
-        }
+      <div
+        className={`fixed ease-in-out w-[80%] duration-500 top-0 bottom-0 z-10 ${
+          nav ? "lg:hidden left-0 border-r border-r-gray-900" : "left-[-100%]"
+        }`}
+        style={{
+          backdropFilter: "blur(20px)",
+        }}
       >
-        <img src={KarmaLogo} className="h-16 ml-16 mt-4" alt="KarmaLogo" />
-
-        {navItems.map((item) => (
-          <li
-            key={item.id}
-            className={`mt-2 p-4 border-b border-gray-600 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
-              item.text === "Ambassadors"
-                ? "bg-[#8EFF09] hover:text-white hover:bg-[#09D3FF] px-8 mt-10 ml-6 mr-6 text-black text-xl grid place-items-center"
-                : ""
-            }`}
-          >
-            {item.text}
-          </li>
-        ))}
-      </ul>
+        <Link to="/"
+        onClick={handleNav}
+        >
+          <img src={KarmaLogo} className="h-16 ml-6 mt-4" alt="KarmaLogo" />
+        </Link>
+        <ul
+          className="flex flex-col mt-8"
+          style={{
+            backdropFilter: "blur(20px)",
+          }}
+        >
+          {navItems.map((item) => (
+            <NavLink
+              onClick={handleNav}
+              to={item.link}
+              className={`p-4 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
+                item.text === "Ambassadors"
+                  ? "bg-[#8EFF09] hover:text-white hover:bg-[#09D3FF] px-8 mt-2 mx-6 text-black text-xl grid place-items-center"
+                  : ""
+              }`}
+            >
+              {item.text}
+            </NavLink>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
