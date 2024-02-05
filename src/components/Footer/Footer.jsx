@@ -12,7 +12,7 @@ import {
 function Footer() {
   return (
     <footer className="flex flex-col items-center w-sceen pb-[40px] pt-[100px] footer">
-      <div className="flex grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-[118px_94px_150px_171px] lg:w-[1074px] justify-between pb-[50px] gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-[118px_94px_150px_171px] lg:w-[1074px] justify-between pb-[50px] gap-10">
         <div className="">
           <a href="">
             <h1>Home</h1>

@@ -7,6 +7,7 @@
   font-weight: 700;
   font-style: italic;
   background: linear-gradient(90deg, #8eff09, #ffffff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
