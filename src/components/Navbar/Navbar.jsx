@@ -48,8 +48,8 @@ const Navbar = () => {
               src={KarmaLogo}
               height={scrollBackground ? 44 : 68}
               width={scrollBackground ? 44 : 68}
-              className={`py-4 transition-all duration-500 ease-in-out ${
-                scrollBackground ? "h-18 w-18" : "h-24 w-24"
+              className={`p-2 lg:py-4 transition-all duration-500 ease-in-out h-16 w-16${
+                scrollBackground ? "h-16 w-16" : "lg:h-24 lg:w-24"
               }`}
               alt="KarmaLogo"
             />
@@ -87,12 +87,7 @@ const Navbar = () => {
         <Link to="/" onClick={handleNav}>
           <img src={KarmaLogo} className="h-16 ml-6 mt-4" alt="KarmaLogo" />
         </Link>
-        <ul
-          className="flex flex-col mt-8"
-          style={{
-            backdropFilter: "blur(20px)",
-          }}
-        >
+        <ul className="flex flex-col mt-8">
           {navItems.map((item) => (
             <NavLink
               onClick={handleNav}

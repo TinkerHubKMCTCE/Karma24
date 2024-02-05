@@ -9,12 +9,10 @@ const Hero = () => {
     <div className="container mx-auto pb-20">
       <div className="h-fit flex flex-col">
         <div className="">
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-6 px-8 py-12 lg:py-32"
-          >
+          <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-6 px-8 pb-12 lg:pb-32">
             <div className="grid place-items-center mt-12">
               <img className="max-w-xl mx-auto w-full" src={karma24} alt="KARMA'24" />
-              <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium">
+              <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium tracking-tighter">
                 what goes around comes around
               </p>
               <button className="bg-[#09D3FF] hover:bg-[#8EFF09] text-black font-bold text-lg py-2 px-10 tracking-wide rounded-xl place-items-center mt-8 ">
