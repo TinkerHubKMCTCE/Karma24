@@ -26,7 +26,7 @@ const Hero = () => {
                 </p>
                 <FilledButton text="Buy Tickets" />
               </div>
-              <div>
+              <div className="overflow-clip">
                 <img
                   className="max-w-xl mx-auto mt-6 w-full scale-150 mix-blend-screen"
                   src={budha}
