@@ -9,7 +9,7 @@ const WorkshopItem = ({ workshop }) => {
       onClick={() => navigate(`/workshops/${workshop.id}`)}
       className="p-8 rounded-3xl mx-auto workshop-item max-w-xs"
       style={{
-        backgroundImage: `url(/src/assets/workshops/${workshop.image})`,
+        backgroundImage: `url(${workshop.image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

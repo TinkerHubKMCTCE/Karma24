@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 
 const EventCard = ({ event }) => {
   const navigate = useNavigate();
+  const image = `../../../../../assets/events/${event.image}`;
 
   return (
     <div
       onClick={() => navigate(`/events/${event.id}`)}
       className="p-8 rounded-3xl mx-auto workshop-item"
       style={{
-        backgroundImage: `url(/src/assets/events/${event.image})`,
+        backgroundImage: `url(${event.image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

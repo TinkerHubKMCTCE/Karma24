@@ -1,3 +1,7 @@
+import hackImage from "../assets/events/event-hackathon.jpg";
+import caddImage from "../assets/events/workshop-cadd.jpg";
+import vrImage from "../assets/events/event-vr.jpg";
+
 const events = [
   {
     id: "1",
@@ -11,7 +15,7 @@ const events = [
     id: "2",
     title: "HACKATHON",
     dateTime: "01 MARCH 2024, 10 AM - 02 MARCH 2024, 10 AM",
-    image: "event-hackathon.jpg",
+    image: hackImage,
     description: ["Categories: Hardware, Software", "Team of 3 or 4 members"],
     fee: "300 per team",
     prize: "1st Prize: ₹15000, 2nd Prize: ₹10000",
@@ -20,7 +24,7 @@ const events = [
     id: "3",
     title: "Cadd Modeling",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
-    image: "event-vr.jpg",
+    image: caddImage,
     description: ["Individual Participation"],
     fee: 99,
     prize: "1st Prize: ₹2000, 2nd Prize: ₹1000",
@@ -29,7 +33,7 @@ const events = [
     id: "4",
     title: "VR EXPO",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
-    image: "event-vr.jpg",
+    image: vrImage,
     description: ["6+ Adeventres and Games"],
     fee: 50,
   },
