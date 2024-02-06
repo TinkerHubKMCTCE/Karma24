@@ -1,5 +1,7 @@
 import Slider from "react-slick";
 
+import { motion } from "framer-motion";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -65,7 +67,12 @@ const SpotLight = () => {
     <section className="pt-20 font-inversionz text-8xl text-karma-green">
       <div className="max-w-screen-2xl mx-auto">
         <h2 className="text-center mb-8">SPOTLIGHT</h2>
-        <div className="slider-container">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          className="slider-container"
+        >
           <Slider {...settings}>
             {items.map((item, index) => (
               <div
@@ -81,7 +88,7 @@ const SpotLight = () => {
               </div>
             ))}
           </Slider>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

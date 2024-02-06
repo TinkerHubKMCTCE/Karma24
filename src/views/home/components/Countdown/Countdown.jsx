@@ -1,5 +1,7 @@
 // src/Countdown.js
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
 import "./Countdown.css";
 
 const Countdown = ({ targetDate, title }) => {
@@ -47,10 +49,38 @@ const Countdown = ({ targetDate, title }) => {
   const timeout = getTimeUnit() < 0 ? "0" : getTimeUnit().toString().padStart(2, "0");
 
   return (
-    <div className="countdown-item">
-      <div className="countdown-circle">
+    <div
+      // animate={{ borderRadius: ["50%", "40%", "50%"] }}
+      // transition={{
+      //   duration: 1,
+      //   repeat: Infinity,
+      //   ease: "easeInOut",
+      // }}
+      // animate={{
+      //   scale: [1, 2, 2, 1, 1],
+      //   rotate: [0, 0, 180, 180, 0],
+      //   borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+      // }}
+      // transition={{
+      //   duration: 2,
+      //   ease: "easeInOut",
+      //   times: [0, 0.2, 0.5, 0.8, 1],
+      //   repeat: Infinity,
+      //   repeatDelay: 1
+      // }}
+      className="countdown-item"
+    >
+      <motion.div
+        animate={{ borderRadius: ["50%", "45%", "50%"] }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="countdown-circle"
+      >
         <p className="font-orbitron">{timeout}</p>
-      </div>
+      </motion.div>
       <div className="countdown-title font-inversionz  uppercase text-2xl md:text-3xl">
         {title}
       </div>

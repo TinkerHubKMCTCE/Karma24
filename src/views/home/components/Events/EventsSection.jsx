@@ -14,7 +14,7 @@ const EventsSection = () => {
     <>
       <div id="events" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
         <h2 className="big-green-title mb-4">Events</h2>
-        <div className="swiper-container">
+        <div className="swiper-container px-10">
           <Swiper
             slidesPerView={1}
             spaceBetween={40}
