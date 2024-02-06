@@ -1,16 +1,22 @@
+import { useNavigate } from "react-router-dom";
 import "./Workshops.css";
 
-const WorkshopItem = ({ title, image }) => {
+const WorkshopItem = ({ workshop }) => {
+  const navigate = useNavigate();
+
   return (
     <div
+      onClick={() => navigate(`/workshops/${workshop.id}`)}
       className="p-8 rounded-3xl mx-auto workshop-item max-w-xs"
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(/src/assets/workshops/${workshop.image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <h3 className="text-karma-blue font-bold font-retroTeam text-3xl sm:text-4xl">{title}</h3>
+      <h3 className="text-karma-blue font-bold font-retroTeam text-3xl sm:text-4xl">
+        {workshop.title}
+      </h3>
     </div>
   );
 };

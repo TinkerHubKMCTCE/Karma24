@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: Inversionz;
-  src: url("/public/fonts/Inversionz.ttf") format("truetype");
+  src: url("/fonts/Inversionz.ttf") format("truetype");
 }
 
 @font-face {
   font-family: RetroTeam;
-  src: url("/public/fonts/Retro-Team.otf") format("opentype");
+  src: url("/fonts/Retro-Team.otf") format("opentype");
 }
 
 :root {
@@ -45,7 +45,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 @media screen and (max-width: 1024px) {
   .big-green-title {

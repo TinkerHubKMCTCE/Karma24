@@ -5,46 +5,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import gamesImage from "../../../../assets/events/event-games.jpg";
-import hackathonImage from "../../../../assets/events/event-hackathon.jpg";
-import proshowImage from "../../../../assets/events/event-proshow.jpg";
-import vrImage from "../../../../assets/events/event-vr.jpg";
-import workshopImage from "../../../../assets/events/event-workshop.jpg";
+import events from "../../../../data/events";
 
 import EventCard from "./components/EventCard";
 
 const EventsSection = () => {
-  const workshops = [
-    {
-      id: "1",
-      title: "GAMES",
-      image: gamesImage,
-    },
-    {
-      id: "2",
-      title: "HACKATHON",
-      image: hackathonImage,
-    },
-    {
-      id: "3",
-      title: "PRO SHOWS",
-      image: proshowImage,
-    },
-    {
-      id: "4",
-      title: "VR EXPO",
-      image: vrImage,
-    },
-    {
-      id: "5",
-      title: "WORKSHOP",
-      image: workshopImage,
-    },
-  ];
-
   return (
     <>
-      <div className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
+      <div id="events" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
         <h2 className="big-green-title mb-4">Events</h2>
         <div className="swiper-container px-10">
           <Swiper
@@ -65,9 +33,9 @@ const EventsSection = () => {
             }}
             modules={[Navigation]}
           >
-            {workshops.map((workshop) => (
-              <SwiperSlide key={workshop.id}>
-                <EventCard title={workshop.title} image={workshop.image} />
+            {events.map((event) => (
+              <SwiperSlide key={event.id}>
+                <EventCard event={event} />
               </SwiperSlide>
             ))}
           </Swiper>

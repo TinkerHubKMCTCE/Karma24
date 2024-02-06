@@ -25,8 +25,8 @@ const Navbar = () => {
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "Events", link: "www.google.com" },
-    { id: 3, text: "Workshops", link: "www.google.com" },
+    { id: 2, text: "Events", link: "#events" },
+    { id: 3, text: "Workshops", link: "#workshops" },
     { id: 4, text: "Proshow", link: "www.google.com" },
     { id: 5, text: "Tickets", link: "www.google.com" },
     { id: 6, text: "Ambassadors", link: "/login" },

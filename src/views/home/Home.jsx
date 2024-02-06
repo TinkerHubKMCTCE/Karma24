@@ -11,7 +11,6 @@ const Home = () => {
       <AmbassadorsSection />
       <EventsSection />
       <WorkshopsSection />
-      <Footer />
     </>
   );
 };

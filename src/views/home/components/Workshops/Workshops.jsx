@@ -2,9 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import WorkshopItem from "./WorkshopItem";
 
-import caddImage from "../../../../assets/workshops/workshop-cadd.jpg";
-import evImage from "../../../../assets/workshops/workshop-ev.jpg";
-import cyberImage from "../../../../assets/workshops/workshop-cyber.jpg";
+import workshops from "../../../../data/workshops";
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,42 +14,9 @@ import "./Workshops.css";
 import { Navigation } from "swiper/modules";
 
 const WorkshopsSection = () => {
-  const workshops = [
-    {
-      id: "1",
-      title: "CADD MODELLING Workshop",
-      image: caddImage,
-    },
-    {
-      id: "2",
-      title: "ELECTRONIC VEHICLE Workshop",
-      image: evImage,
-    },
-    {
-      id: "3",
-      title: "CYBERSECURITY Workshop",
-      image: cyberImage,
-    },
-    {
-      id: "4",
-      title: "CADD MODELLING Workshop",
-      image: caddImage,
-    },
-    {
-      id: "5",
-      title: "ELECTRONIC VEHICLE Workshop",
-      image: evImage,
-    },
-    {
-      id: "6",
-      title: "CYBERSECURITY Workshop",
-      image: cyberImage,
-    },
-  ];
-
   return (
     <>
-      <div className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
+      <div id="workshops" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
         <h2 className="big-green-title  mb-4">Workshops</h2>
         <div className="swiper-container px-10 mx-auto">
           <Swiper
@@ -74,7 +39,7 @@ const WorkshopsSection = () => {
           >
             {workshops.map((workshop) => (
               <SwiperSlide key={workshop.id}>
-                <WorkshopItem title={workshop.title} image={workshop.image} />
+                <WorkshopItem workshop={workshop} />
               </SwiperSlide>
             ))}
           </Swiper>
