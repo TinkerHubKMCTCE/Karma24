@@ -12,6 +12,7 @@ const WorkshopItem = ({ workshop }) => {
         backgroundImage: `url(${workshop.image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
     >
       <h3 className="text-karma-blue font-bold font-retroTeam text-3xl sm:text-4xl">
