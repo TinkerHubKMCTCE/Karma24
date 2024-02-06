@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: Inversionz;
-  src: url("/public/fonts/Inversionz.ttf") format("truetype");
+  src: url("/fonts/Inversionz.ttf") format("truetype");
 }
 
 @font-face {
   font-family: RetroTeam;
-  src: url("/public/fonts/Retro-Team.otf") format("opentype");
+  src: url("/fonts/Retro-Team.otf") format("opentype");
 }
 
 :root {
@@ -32,6 +32,7 @@ body {
   padding: 0;
   /* background: url("assets/hero-bg-grid.svg"),url("assets/hero-bg-texture.svg") no-repeat center center/cover; */
   background-color: black;
+  min-height: 100vh;
 }
 
 .big-green-title {
@@ -45,7 +46,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 @media screen and (max-width: 1024px) {
   .big-green-title {

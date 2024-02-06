@@ -1,19 +1,25 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./views/home/Home";
-import Navbar from "./components/Navbar/Navbar";
 import LoginView from "./views/home/components/Ambassadors/login";
 import SignupView from "./views/home/components/Ambassadors/signup";
 import MainLayout from "./layouts/MainLayout";
+import EventDetailsView from "./views/EventDetailsView";
+import NotFound from "./views/NotFound";
 
 const router = createBrowserRouter([
-  { path: "/", element: <MainLayout />,
-  children: [
-    { path: "/", element: <Home /> },
-    { path: "/login", element: <LoginView /> },
-    { path: "/signup", element: <SignupView /> },
-  ]
- },
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      { path: "*", element: <NotFound /> },
+      { path: "/", element: <Home /> },
+      { path: "events/:id", element: <EventDetailsView /> },
+      { path: "workshops/:id", element: <EventDetailsView isWorkshop={true} /> },
+      { path: "login", element: <LoginView /> },
+      { path: "signup", element: <SignupView /> },
+    ],
+  },
 ]);
 
 function App() {

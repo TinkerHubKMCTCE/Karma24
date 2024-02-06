@@ -13,7 +13,6 @@ function Footer() {
   return (
     <footer className="flex flex-col items-center mt-24 p-4 footer">
       <div className="container max-w-screen-xl m-4 mb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 w-full justify-between gap-10">
-        {/* lg:grid-cols-[118px_94px_150px_171px] */}
         <div className="">
           <a href="">
             <h1>Home</h1>
