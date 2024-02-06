@@ -5,12 +5,14 @@ import LoginView from "./views/home/components/Ambassadors/login";
 import SignupView from "./views/home/components/Ambassadors/signup";
 import MainLayout from "./layouts/MainLayout";
 import EventDetailsView from "./views/EventDetailsView";
+import NotFound from "./views/NotFound";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     children: [
+      { path: "*", element: <NotFound /> },
       { path: "/", element: <Home /> },
       { path: "events/:id", element: <EventDetailsView /> },
       { path: "workshops/:id", element: <EventDetailsView isWorkshop={true} /> },
