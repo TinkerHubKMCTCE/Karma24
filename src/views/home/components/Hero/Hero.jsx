@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Countdown from "../Countdown/Countdown";
 import FilledButton from "../../../../components/FilledButton";
 
@@ -19,27 +21,52 @@ const Hero = () => {
         <div className="h-fit flex flex-col">
           <div className="">
             <div className="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-6 px-8 pb-12 lg:pb-32">
-              <div className="grid place-items-center mt-12 z-20">
-                <img className="max-w-xl mx-auto w-full" src={karma24} alt="KARMA'24" />
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="grid place-items-center mt-12"
+              >
+                <img
+                  loading="lazy"
+                  className="max-w-xl mx-auto w-full"
+                  src={karma24}
+                  alt="KARMA'24"
+                />
                 <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium tracking-tighter">
                   what goes around comes around
                 </p>
                 <FilledButton text="Buy Tickets" />
-              </div>
-              <div className="overflow-clip">
-                <img
-                  className="max-w-xl mx-auto mt-6 w-full scale-150 mix-blend-screen"
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="overflow-x-clip"
+              >
+                <motion.img
+                  className="max-w-xl mx-auto mt-6 w-full mix-blend-screen transition-all duration-300 ease-out"
                   src={budha}
                   alt="budha"
+                  drag
+                  dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                  dragElastic={0.05}
+                  initial={{ scale: 1.5 }}
                 />
-              </div>
+              </motion.div>
             </div>
-            <div className="grid grid-cols-4 gap-4 md:gap-10 max-w-2xl mx-auto">
+            <motion.div
+              // staggered animation while in view
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="grid grid-cols-4 gap-4 md:gap-10 max-w-2xl mx-auto"
+            >
               <Countdown targetDate={targetDate} title="Days" />
               <Countdown targetDate={targetDate} title="Hours" />
               <Countdown targetDate={targetDate} title="Minutes" />
               <Countdown targetDate={targetDate} title="Seconds" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
