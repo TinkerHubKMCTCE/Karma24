@@ -15,11 +15,11 @@ const GamesSection = () => {
     <>
       <div
         id="competitions"
-        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4 overflow-x-clip"
+        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4"
       >
         <motion.h2
-          initial={{ opacity: 0, x: 10, scaleY: 0.5 }}
-          whileInView={{ opacity: 1, x: 0, scaleY: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ margin: "20px", amount: "all" }}
           className="big-green-title mb-4"
