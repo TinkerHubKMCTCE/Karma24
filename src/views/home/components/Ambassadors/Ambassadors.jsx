@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import ambassador from "../../../../assets/images/money-box.jpg";
 
 const AmbassadorsSection = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="container max-w-screen-xl mx-auto px-4">
       <div className="flex justify-between">
@@ -29,7 +32,10 @@ const AmbassadorsSection = () => {
               natus perferendis ipsum ratione voluptas in voluptatibus minus dignissimos.
               Magni, nisi!
             </p>
-            <button className="bg-[#8EFF09] hover:bg-[#09D3FF] text-black font-bold text-lg py-2 px-10 tracking-wide rounded-xl place-items-center mt-8 ">
+            <button
+              onClick={() => navigate("/stand-by")}
+              className="bg-[#8EFF09] hover:bg-[#09D3FF] text-black font-bold text-lg py-2 px-10 tracking-wide rounded-xl place-items-center mt-8 "
+            >
               Enroll Now
             </button>
           </div>

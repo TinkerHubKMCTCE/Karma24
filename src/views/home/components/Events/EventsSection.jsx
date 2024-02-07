@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,8 +13,19 @@ import EventCard from "./components/EventCard";
 const EventsSection = () => {
   return (
     <>
-      <div id="events" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
-        <h2 className="big-green-title mb-4">Events</h2>
+      <div
+        id="events"
+        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4 overflow-x-hidden"
+      >
+        <motion.h2
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ margin: "112px" }}
+          className="big-green-title mb-4"
+        >
+          Events
+        </motion.h2>
         <div className="swiper-container px-10">
           <Swiper
             slidesPerView={1}

@@ -6,9 +6,11 @@ import FilledButton from "../../../../components/FilledButton";
 import karma24 from "../../../../assets/karma24.svg";
 import budha from "../../../../assets/images/buddha.jpg";
 import heroBg from "../../../../assets/hero-bg.svg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const targetDate = new Date("2024-03-01T00:00:00");
+  const navigate = useNavigate();
 
   return (
     <section
@@ -37,7 +39,7 @@ const Hero = () => {
                 <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium tracking-tighter">
                   what goes around comes around
                 </p>
-                <FilledButton text="Buy Tickets" />
+                <FilledButton text="Buy Tickets" onClick={() => navigate("/tickets")} />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 50 }}

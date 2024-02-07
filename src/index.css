@@ -41,6 +41,7 @@ body {
   font-size: 8rem;
   /* gradient 95fe1a -> cffe97 */
   background: linear-gradient(to right, #95fe1a 0%, #cffe97 100%);
+  display: inline-block;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,6 +50,12 @@ body {
 @media screen and (max-width: 1024px) {
   .big-green-title {
     font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .big-green-title {
+    font-size: 5rem;
   }
 }
 

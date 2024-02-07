@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 
 import WorkshopItem from "./WorkshopItem";
 
@@ -11,13 +13,19 @@ import "swiper/css/navigation";
 
 import "./Workshops.css";
 
-import { Navigation } from "swiper/modules";
-
 const WorkshopsSection = () => {
   return (
     <>
       <div id="workshops" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
-        <h2 className="big-green-title  mb-4">Workshops</h2>
+        <motion.h2
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ margin: "20px", amount: "all" }}
+          className="big-green-title  mb-4"
+        >
+          Workshops
+        </motion.h2>
         <div className="swiper-container px-10 mx-auto">
           <Swiper
             slidesPerView={1}
