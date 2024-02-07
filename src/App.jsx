@@ -6,6 +6,7 @@ import SignupView from "./views/home/components/Ambassadors/signup";
 import MainLayout from "./layouts/MainLayout";
 import EventDetailsView from "./views/EventDetailsView";
 import NotFound from "./views/NotFound";
+import programType from "./programType";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,9 @@ const router = createBrowserRouter([
     children: [
       { path: "*", element: <NotFound /> },
       { path: "/", element: <Home /> },
-      { path: "events/:id", element: <EventDetailsView /> },
-      { path: "workshops/:id", element: <EventDetailsView isWorkshop={true} /> },
+      { path: "events/:id", element: <EventDetailsView type={programType.EVENT} /> },
+      { path: "workshops/:id", element: <EventDetailsView type={programType.WORKSHOP} /> },
+      { path: "games/:id", element: <EventDetailsView type={programType.GAME} /> },
       { path: "login", element: <LoginView /> },
       { path: "signup", element: <SignupView /> },
     ],
