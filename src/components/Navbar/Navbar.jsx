@@ -35,7 +35,7 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: "Events", link: "/", sectionId: "events" },
     { id: 2, text: "Workshops", link: "/", sectionId: "workshops" },
-    { id: 3, text: "Games", link: "/", sectionId: "games" },
+    { id: 3, text: "Games", link: "/", sectionId: "competitions" },
     { id: 5, text: "Tickets", link: "/tickets" },
     { id: 6, text: "Ambassadors", link: "/stand-by" },
     // { id: 6, text: "Ambassadors", link: "/login" },

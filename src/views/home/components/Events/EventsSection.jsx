@@ -18,8 +18,8 @@ const EventsSection = () => {
         className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4 overflow-x-hidden"
       >
         <motion.h2
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 10, scaleY: 0.5 }}
+          whileInView={{ opacity: 1, x: 0, scaleY: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ margin: "112px" }}
           className="big-green-title mb-4"
