@@ -1,8 +1,15 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginView = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <section className="bg-black">
+    <section className="">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto h-full md:pt-20">
         <div className="w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-black bg-opacity-75 border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -14,10 +21,7 @@ const LoginView = () => {
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium  text-white"
-                >
+                <label for="email" className="block mb-2 text-sm font-medium  text-white">
                   Your email
                 </label>
                 <div class="relative">
@@ -67,7 +71,6 @@ const LoginView = () => {
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       class="w-4 h-4 text-gray-500 dark:text-gray-400"
-
                     >
                       <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z" />
                     </svg>
@@ -91,6 +94,10 @@ const LoginView = () => {
                 </a>
               </div>
               <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/dashboard");
+                }}
                 type="submit"
                 className="w-full text-black bg-karma-green hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
               >

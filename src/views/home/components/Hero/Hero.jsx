@@ -12,6 +12,7 @@ const Hero = () => {
 
   return (
     <section
+      id="hero"
       className="bg-opacity-50 bg-black"
       style={{
         background: `url(${heroBg}) no-repeat center center/cover`,
@@ -45,7 +46,7 @@ const Hero = () => {
                 className="overflow-x-clip"
               >
                 <motion.img
-                  className="max-w-xl mx-auto mt-6 w-full mix-blend-screen transition-all duration-300 ease-out"
+                  className="max-w-xl mx-auto mt-6 w-full cursor-grab mix-blend-screen transition-all duration-300 ease-out"
                   src={budha}
                   alt="budha"
                   drag
@@ -59,7 +60,7 @@ const Hero = () => {
               // staggered animation while in view
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, staggerChildren: 0.5 }}
               className="grid grid-cols-4 gap-4 md:gap-10 max-w-2xl mx-auto"
             >
               <Countdown targetDate={targetDate} title="Days" />
