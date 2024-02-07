@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 const EventCard = ({ event }) => {
   const navigate = useNavigate();
-  const image = `../../../../../assets/events/${event.image}`;
 
   return (
     <motion.div

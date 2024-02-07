@@ -9,15 +9,14 @@ const SpotLight = () => {
   let settings = {
     dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    swipeToSlide: true,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 2000,
-    cssEase: "ease-in-out",
+    autoplaySpeed: 0,
+    cssEase: "linear",
     arrows: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -64,7 +63,7 @@ const SpotLight = () => {
   ];
 
   return (
-    <section className="pt-20 font-inversionz text-8xl text-karma-green">
+    <section className="py-20 font-inversionz text-6xl sm:text-8xl text-karma-green">
       <div className="max-w-screen-2xl mx-auto">
         <h2 className="text-center mb-8">SPOTLIGHT</h2>
         <motion.div
@@ -83,7 +82,7 @@ const SpotLight = () => {
                 <img
                   src={item}
                   alt="Spotlight"
-                  className="h-80 object-cover skew-x--skew-x-6 scale-125 hover:scale-125 transition-transform duration-1000 ease-in-out"
+                  className="h-80 object-cover skew-x--skew-x-6 hover:scale-125 hover:rotate-3 transition-transform duration-1000 ease-in-out"
                 />
               </div>
             ))}
