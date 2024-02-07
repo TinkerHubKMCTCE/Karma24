@@ -48,17 +48,13 @@ const EventDetailsView = ({ type }) => {
         /> */}
         <p className="text-2xl font-retroTeam tracking-wide leading-8">
           {item.dateTime} <br />
-          {item.description
-            ? item.description.map((desc) => <p>{desc}</p>)
-            : null}
+          {item.description ? item.description.map((desc) => <p>{desc}</p>) : null}
         </p>
       </div>
       <p className="font-bold font-retroTeam text-3xl mt-4 text-karma-green">
         {item.prize}
       </p>
-      <p className="font-bold font-retroTeam text-2xl mt-4">
-        Fee: ₹{item.fee}/-
-      </p>
+      <p className="font-bold font-retroTeam text-2xl mt-4">Fee: ₹{item.fee}/-</p>
       <FilledButton text="REGISTER" />
     </div>
   );

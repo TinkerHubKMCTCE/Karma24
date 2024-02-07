@@ -4,7 +4,7 @@ import Countdown from "../Countdown/Countdown";
 import FilledButton from "../../../../components/FilledButton";
 
 import karma24 from "../../../../assets/karma24.svg";
-import budha from "../../../../assets/images/Buddha.svg";
+import budha from "../../../../assets/images/buddha.jpg";
 import heroBg from "../../../../assets/hero-bg.svg";
 
 const Hero = () => {
@@ -46,13 +46,12 @@ const Hero = () => {
                 className="overflow-x-clip"
               >
                 <motion.img
-                  className="max-w-xl mx-auto mt-6 w-full cursor-grab mix-blend-screen transition-all duration-300 ease-out"
+                  className="max-w-xl mx-auto w-full cursor-grab mix-blend-screen transition-all duration-300 ease-out"
                   src={budha}
                   alt="budha"
                   drag
                   dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                   dragElastic={0.05}
-                  initial={{ scale: 1.5 }}
                 />
               </motion.div>
             </div>

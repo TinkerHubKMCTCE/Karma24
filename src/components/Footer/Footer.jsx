@@ -65,13 +65,11 @@ function Footer() {
           </a>
         </div>
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
-          <h1>Powered By</h1>
-          <img
-            src={azraqz_logo}
-            alt="azraqz"
-            className="w-[171px] h-[162px] azraqz-logo"
-          />
-          <h1>2020-2024</h1>
+          <p className="font-sans uppercase">Powered By</p>
+          <img src={azraqz_logo} alt="azraqz" className="azraqz-logo" />
+          <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
+            2020-2024
+          </p>
         </div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />
