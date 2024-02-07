@@ -1,16 +1,35 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import events from "../data/events";
-import workshops from "../data/workshops";
+import programType from "../programType";
 import FilledButton from "../components/FilledButton";
 
-const EventDetailsView = ({ isWorkshop }) => {
+import events from "../data/events";
+import workshops from "../data/workshops";
+import games from "../data/games";
+
+const EventDetailsView = ({ type }) => {
   const { id } = useParams();
 
-  const item = isWorkshop
-    ? workshops.find((workshop) => workshop.id === id)
-    : events.find((event) => event.id === id);
+  // const item = isWorkshop
+  //   ? workshops.find((workshop) => workshop.id === id)
+  //   : events.find((event) => event.id === id);
+
+  let list;
+
+  switch (type) {
+    case programType.EVENT:
+      list = events;
+      break;
+    case programType.GAME:
+      list = games;
+      break;
+    case programType.WORKSHOP:
+      list = workshops;
+      break;
+  }
+
+  const item = list.find((e) => e.id === id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,13 +48,17 @@ const EventDetailsView = ({ isWorkshop }) => {
         /> */}
         <p className="text-2xl font-retroTeam tracking-wide leading-8">
           {item.dateTime} <br />
-          {item.description ? item.description.map((desc) => <p>{desc}</p>) : null}
+          {item.description
+            ? item.description.map((desc) => <p>{desc}</p>)
+            : null}
         </p>
       </div>
       <p className="font-bold font-retroTeam text-3xl mt-4 text-karma-green">
         {item.prize}
       </p>
-      <p className="font-bold font-retroTeam text-2xl mt-4">Fee: ₹{item.fee}/-</p>
+      <p className="font-bold font-retroTeam text-2xl mt-4">
+        Fee: ₹{item.fee}/-
+      </p>
       <FilledButton text="REGISTER" />
     </div>
   );
