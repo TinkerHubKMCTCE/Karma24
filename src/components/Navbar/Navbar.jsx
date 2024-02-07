@@ -35,10 +35,10 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: "Events", link: "/", sectionId: "events" },
     { id: 2, text: "Workshops", link: "/", sectionId: "workshops" },
-    { id: 3, text: "Games", link: "/", sectionId: "games" },
-    { id: 4, text: "Proshow", link: "/tickets" },
+    { id: 3, text: "Games", link: "/", sectionId: "competitions" },
     { id: 5, text: "Tickets", link: "/tickets" },
-    { id: 6, text: "Ambassadors", link: "/login" },
+    { id: 6, text: "Ambassadors", link: "/stand-by" },
+    // { id: 6, text: "Ambassadors", link: "/login" },
   ];
 
   return (
@@ -65,8 +65,8 @@ const Navbar = () => {
           <ul className="hidden lg:flex">
             {navItems.map((item) => (
               <NavLink
-                to={item.link}
                 key={item.id}
+                to={item.link}
                 onClick={() => handleScrollToSection(item.sectionId)}
                 className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
                   item.text === "Ambassadors"
