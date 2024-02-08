@@ -1,4 +1,10 @@
 import Slider from "react-slick";
+import neeraj from "../../../assets/images/neeraj.png";
+import dj1 from "../../../assets/images/dj1.png";
+import dj2 from "../../../assets/images/dj2.png";
+import ferrari from "../../../assets/images/ferrari.jpeg";
+import sithara from "../../../assets/images/sithara.png";
+import babs from "../../../assets/images/babs.png";
 
 import { motion } from "framer-motion";
 
@@ -50,16 +56,12 @@ const SpotLight = () => {
   };
 
   const items = [
-    "https://media.istockphoto.com/id/971433328/vector/pink-blue-neon-animated-vj-background.jpg?s=612x612&w=0&k=20&c=Ul7JNYKyEaXm_S6FfNsNM3nk9CD_7OFUS83UXXp2hrE=",
-    "https://edge.99images.com/photos/celebrities/neeraj-madhav/neeraj-madhav-best-hd-photos-download-1080p-whatsapp-dpstatus-images-drg5.jpg",
-    "https://w0.peakpx.com/wallpaper/123/490/HD-wallpaper-djing-disco-lights-party-dj.jpg",
-    "https://c0.wallpaperflare.com/preview/27/313/180/man-singing-on-stage.jpg",
-    "https://w.forfun.com/fetch/f9/f9e722cfe7a41820a1cdc017c1771e9e.jpeg",
-    "https://media.istockphoto.com/id/971433328/vector/pink-blue-neon-animated-vj-background.jpg?s=612x612&w=0&k=20&c=Ul7JNYKyEaXm_S6FfNsNM3nk9CD_7OFUS83UXXp2hrE=",
-    "https://edge.99images.com/photos/celebrities/neeraj-madhav/neeraj-madhav-best-hd-photos-download-1080p-whatsapp-dpstatus-images-drg5.jpg",
-    "https://w0.peakpx.com/wallpaper/123/490/HD-wallpaper-djing-disco-lights-party-dj.jpg",
-    "https://c0.wallpaperflare.com/preview/27/313/180/man-singing-on-stage.jpg",
-    "https://w.forfun.com/fetch/f9/f9e722cfe7a41820a1cdc017c1771e9e.jpeg",
+    neeraj,
+    dj1,
+    dj2,
+    ferrari,
+    sithara,
+    babs,
   ];
 
   return (
@@ -94,3 +96,17 @@ const SpotLight = () => {
 };
 
 export default SpotLight;
+
+
+
+
+// "https://media.istockphoto.com/id/971433328/vector/pink-blue-neon-animated-vj-background.jpg?s=612x612&w=0&k=20&c=Ul7JNYKyEaXm_S6FfNsNM3nk9CD_7OFUS83UXXp2hrE=",
+//     "https://edge.99images.com/photos/celebrities/neeraj-madhav/neeraj-madhav-best-hd-photos-download-1080p-whatsapp-dpstatus-images-drg5.jpg",
+//     "https://w0.peakpx.com/wallpaper/123/490/HD-wallpaper-djing-disco-lights-party-dj.jpg",
+//     "https://c0.wallpaperflare.com/preview/27/313/180/man-singing-on-stage.jpg",
+//     "https://w.forfun.com/fetch/f9/f9e722cfe7a41820a1cdc017c1771e9e.jpeg",
+//     "https://media.istockphoto.com/id/971433328/vector/pink-blue-neon-animated-vj-background.jpg?s=612x612&w=0&k=20&c=Ul7JNYKyEaXm_S6FfNsNM3nk9CD_7OFUS83UXXp2hrE=",
+//     "https://edge.99images.com/photos/celebrities/neeraj-madhav/neeraj-madhav-best-hd-photos-download-1080p-whatsapp-dpstatus-images-drg5.jpg",
+//     "https://w0.peakpx.com/wallpaper/123/490/HD-wallpaper-djing-disco-lights-party-dj.jpg",
+//     "https://c0.wallpaperflare.com/preview/27/313/180/man-singing-on-stage.jpg",
+//     "https://w.forfun.com/fetch/f9/f9e722cfe7a41820a1cdc017c1771e9e.jpeg",
