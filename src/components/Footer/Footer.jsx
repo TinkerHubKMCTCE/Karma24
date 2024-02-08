@@ -15,7 +15,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center mt-24 p-4 footer">
+    <footer className="flex flex-col items-center p-4 footer">
       <div className="container max-w-screen-xl m-4 mb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 w-full justify-between gap-10">
         <div className="">
           <a href="">
@@ -73,7 +73,7 @@ function Footer() {
           </a>
         </div>
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
-          <h1>Powered By</h1>
+        <p className="font-sans uppercase">Powered By</p>
           <a href="https://www.instagram.com/tm_azraqz/">
             <img
               src={azraqz_logo}
@@ -81,7 +81,9 @@ function Footer() {
               className="w-[171px] h-[162px] azraqz-logo"
             />
           </a>
-          <h1>2020-2024</h1>
+          <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
+            2020-2024
+          </p>
         </div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />

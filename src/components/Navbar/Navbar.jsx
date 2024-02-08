@@ -10,11 +10,13 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const shouldHaveBackground = scrollPosition > 0;
     setScrollBackground(shouldHaveBackground);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -23,12 +25,20 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navItems = [
-    { id: 2, text: "Events", link: "#events" },
-    { id: 3, text: "Workshops", link: "#workshops" },
-    { id: 4, text: "Proshow", link: "/tickets" },
+    { id: 1, text: "Events", link: "/", sectionId: "events" },
+    { id: 2, text: "Workshops", link: "/", sectionId: "workshops" },
+    { id: 3, text: "Games", link: "/", sectionId: "competitions" },
     { id: 5, text: "Tickets", link: "/tickets" },
-    { id: 6, text: "Ambassadors", link: "/login" },
+    { id: 6, text: "Ambassadors", link: "/stand-by" },
+    // { id: 6, text: "Ambassadors", link: "/login" },
   ];
 
   return (
@@ -42,7 +52,7 @@ const Navbar = () => {
         <div
           className={`container max-w-screen-xl mx-auto flex justify-between items-center w-full text-white text-lg px-4`}
         >
-          <Link to="/">
+          <Link to="/" onClick={() => handleScrollToSection("hero")}>
             <img
               src={KarmaLogo}
               className={`p-2 lg:py-4 transition-all duration-500 ease-in-out h-16 w-16${
@@ -55,8 +65,9 @@ const Navbar = () => {
           <ul className="hidden lg:flex">
             {navItems.map((item) => (
               <NavLink
-                to={item.link}
                 key={item.id}
+                to={item.link}
+                onClick={() => handleScrollToSection(item.sectionId)}
                 className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
                   item.text === "Ambassadors"
                     ? "bg-[#8EFF09] hover:text-black px-8 mr-10 text-black"
@@ -79,6 +90,7 @@ const Navbar = () => {
         }`}
         style={{
           backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
         }}
       >
         <Link to="/" onClick={handleNav}>
@@ -87,7 +99,10 @@ const Navbar = () => {
         <ul className="flex flex-col mt-8">
           {navItems.map((item) => (
             <NavLink
-              onClick={handleNav}
+              onClick={() => {
+                if (item.sectionId) handleScrollToSection(item.sectionId);
+                handleNav();
+              }}
               to={item.link}
               className={`p-4 hover:text-karma-green text-2xl rounded-xl px-6 cursor-pointer duration-300 ${
                 item.text === "Ambassadors"

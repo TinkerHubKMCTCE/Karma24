@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+
 const SignupView = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <section className=" bg-black ">
+    <section>
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div className="w-full  rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-black bg-opacity-75 border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -12,10 +18,7 @@ const SignupView = () => {
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium  text-white"
-                >
+                <label for="email" className="block mb-2 text-sm font-medium  text-white">
                   Your Name
                 </label>
                 <div class="relative">
@@ -41,10 +44,7 @@ const SignupView = () => {
                 </div>
               </div>
               <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium  text-white"
-                >
+                <label for="email" className="block mb-2 text-sm font-medium  text-white">
                   Email
                 </label>
                 <div class="relative">
@@ -109,10 +109,7 @@ const SignupView = () => {
                 </div>
               </div>
               <div>
-                <label
-                  for="text"
-                  className="block mb-2 text-sm font-medium  text-white"
-                >
+                <label for="text" className="block mb-2 text-sm font-medium  text-white">
                   College
                 </label>
                 <div class="relative">
@@ -147,10 +144,7 @@ const SignupView = () => {
                 </div>
               </div>
               <div>
-                <label
-                  for="tel"
-                  className="block mb-2 text-sm font-medium  text-white"
-                >
+                <label for="tel" className="block mb-2 text-sm font-medium  text-white">
                   Phone Number
                 </label>
                 <div class="relative">
@@ -175,6 +169,10 @@ const SignupView = () => {
                 </div>
               </div>
               <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/dashboard");
+                }}
                 type="submit"
                 className="w-full text-black bg-karma-green hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
               >

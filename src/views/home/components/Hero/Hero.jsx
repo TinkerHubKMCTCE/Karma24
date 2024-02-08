@@ -4,14 +4,17 @@ import Countdown from "../Countdown/Countdown";
 import FilledButton from "../../../../components/FilledButton";
 
 import karma24 from "../../../../assets/karma24.svg";
-import budha from "../../../../assets/images/Buddha.svg";
+import budha from "../../../../assets/images/buddha.jpg";
 import heroBg from "../../../../assets/hero-bg.svg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const targetDate = new Date("2024-03-01T00:00:00");
+  const navigate = useNavigate();
 
   return (
     <section
+      id="hero"
       className="bg-opacity-50 bg-black"
       style={{
         background: `url(${heroBg}) no-repeat center center/cover`,
@@ -36,7 +39,7 @@ const Hero = () => {
                 <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium tracking-tighter">
                   what goes around comes around
                 </p>
-                <FilledButton text="Buy Tickets" />
+                <FilledButton text="Buy Tickets" onClick={() => navigate("/tickets")} />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
@@ -45,13 +48,12 @@ const Hero = () => {
                 className="overflow-x-clip"
               >
                 <motion.img
-                  className="max-w-xl mx-auto mt-6 w-full mix-blend-screen transition-all duration-300 ease-out"
+                  className="max-w-xl mx-auto w-full cursor-grab mix-blend-screen transition-all duration-300 ease-out"
                   src={budha}
                   alt="budha"
                   drag
                   dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                   dragElastic={0.05}
-                  initial={{ scale: 1.5 }}
                 />
               </motion.div>
             </div>
@@ -59,7 +61,7 @@ const Hero = () => {
               // staggered animation while in view
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, staggerChildren: 0.5 }}
               className="grid grid-cols-4 gap-4 md:gap-10 max-w-2xl mx-auto"
             >
               <Countdown targetDate={targetDate} title="Days" />
