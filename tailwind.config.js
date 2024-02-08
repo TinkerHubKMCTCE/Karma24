@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         inversionz: ["Inversionz", "sans-serif"],
         orbitron: ["Orbitron", "sans-serif"],
+        retroTeam: ["RetroTeam", "sans-serif"],
+      },
+      colors: {
+        "karma-blue": "#09d3ff",
+        "karma-green": "#8EFF09"
       },
     },
   },

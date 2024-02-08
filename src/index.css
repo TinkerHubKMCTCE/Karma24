@@ -6,7 +6,12 @@
 
 @font-face {
   font-family: Inversionz;
-  src: url("/public/fonts/Inversionz.ttf") format("truetype");
+  src: url("/fonts/Inversionz.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RetroTeam;
+  src: url("/fonts/Retro-Team.otf") format("opentype");
 }
 
 :root {
@@ -25,4 +30,37 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.big-green-title {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 8rem;
+  /* gradient 95fe1a -> cffe97 */
+  background: linear-gradient(to right, #95fe1a 0%, #cffe97 100%);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .big-green-title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .big-green-title {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .big-green-title {
+    font-size: 3rem;
+  }
 }
