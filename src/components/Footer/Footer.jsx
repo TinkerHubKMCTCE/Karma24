@@ -87,7 +87,7 @@ function Footer() {
         </div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />
-      <div className="flex flex-col sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8">
+      <div className="flex flex-col sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8 pt-[20px]">
         <div className="flex justify-center lg:justify-start ">
           <img
             src={karma_logo}
