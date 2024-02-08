@@ -17,17 +17,12 @@ const AmbassadorsSection = () => {
               Campus Ambassadors Program
             </h1>
             <p className="text-justify mt-4">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum a in quo
-              maxime reiciendis ducimus at consequuntur nesciunt eius suscipit provident
-              sequi numquam qui sunt enim ratione atque dolorem aliquam nostrum error,
-              adipisci commodi. Molestiae esse numquam repellendus error? Laboriosam
-              tempore atque earum, neque distinctio excepturi, quia corporis a facilis
-              fugiat fugit maxime veniam sapiente ex nisi vitae mollitia repellat
-              perspiciatis expedita blanditiis. Exercitationem aut possimus, animi soluta
-              labore, maxime atque amet dolorum non nam enim, vero in voluptatibus harum
-              quos assumenda iste repellendus cum libero! Molestias asperiores maiores
-              natus perferendis ipsum ratione voluptas in voluptatibus minus dignissimos.
-              Magni, nisi!
+              KMCT College of Engineering presents Campus Ambassadorship Program
+              as a part of Karma 2024! Represent your college for Karma and get
+              an opportunity to increase your network and reach. Be a Campus
+              Ambassador and refer students from your college to participate in
+              our programs, workshops and events and stand a chance to win
+              exciting prizes worth over 2k!
             </p>
             <button className="bg-[#8EFF09] hover:bg-[#09D3FF] text-black font-bold text-lg py-2 px-10 tracking-wide rounded-xl place-items-center mt-8 ">
               Enroll Now

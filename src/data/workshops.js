@@ -13,7 +13,12 @@ const workshops = [
     id: "2",
     title: "ELECTRONIC VEHICLE Workshop",
     image: evImage,
-    fee: 399,
+    description: [
+      "Resource person - Muhammed Ajmal, Asst. Service Executive, Monthra Electric",
+      "Two wheeler",
+      "KTU Activity point - Upto 20",
+    ],
+    fee: 99,
   },
   {
     id: "3",
@@ -29,12 +34,6 @@ const workshops = [
   },
   {
     id: "5",
-    title: "ELECTRONIC VEHICLE Workshop",
-    image: evImage,
-    fee: 399,
-  },
-  {
-    id: "6",
     title: "CYBERSECURITY Workshop",
     image: cyberImage,
     fee: 399,
