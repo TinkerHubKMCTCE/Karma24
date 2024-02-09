@@ -73,7 +73,7 @@ const games = [
     fee: 50,
   },
   {
-    id: "6",
+    id: "7",
     title: "Touch Me Not",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
     image: touchmenot,
@@ -82,7 +82,7 @@ const games = [
     fee: 399,
   },
   {
-    id: "6",
+    id: "8",
     title: "Penalty Shootout",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
     image: shootout,
