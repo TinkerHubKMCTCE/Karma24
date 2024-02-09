@@ -87,7 +87,7 @@ function Footer() {
         </div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />
-      <div className="flex flex-col flex-hidden sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8">
+      <div className="flex flex-col flex-hidden sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8 mt-8">
         <div className="flex justify-center lg:justify-start ">
           <img
             src={kmct_logo}
@@ -107,7 +107,7 @@ function Footer() {
             <h1 className="px-[20px]">Shipping & Delivery</h1>
           </Link>
 
-          <Link to="/l/cancellation-and-refund" target="blank">
+          <Link to="/cancellation" target="blank">
             <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
           </Link>
         </div>
