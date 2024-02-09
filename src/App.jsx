@@ -10,6 +10,7 @@ import programType from "./programType";
 import AmbassadorDashboard from "./views/AmbassadorDashboard";
 import Tickets from "./views/Tickets";
 import StartingSoon from "./views/StartingSoon";
+import LegalPage from "./views/home/LegalPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { path: "*", element: <NotFound /> },
       { path: "/", element: <Home /> },
+      { path: "/not-found", element: <NotFound /> },
       { path: "/stand-by", element: <StartingSoon /> },
       { path: "events/:id", element: <EventDetailsView type={programType.EVENT} /> },
       {
@@ -29,6 +31,8 @@ const router = createBrowserRouter([
       { path: "signup", element: <SignupView /> },
       { path: "tickets", element: <Tickets /> },
       { path: "dashboard", element: <AmbassadorDashboard /> },
+      { path: "/l/:slug", element: <LegalPage/> },
+
     ],
   },
 ]);
