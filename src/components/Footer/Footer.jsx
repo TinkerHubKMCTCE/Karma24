@@ -1,6 +1,9 @@
-import { motion } from "framer-motion";
-
+import { NavLink, Link } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+import kmct_logo from "../../assets/kmct-logo.svg";
+import azraqz_logo from "../../assets/azraqz-logo.svg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -10,6 +13,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+import "./Footer.css";
 import karma_logo from "../../assets/karma-logo-color.svg";
 import azraqz_logo from "../../assets/azraqz-logo.svg";
 
@@ -74,56 +78,40 @@ function Footer() {
             <p>Contact us</p>
           </a>
         </div>
-        <motion.div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
+        <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
           <p className="font-sans uppercase">Powered By</p>
           <a href="https://www.instagram.com/tm_azraqz/">
             <motion.img
               src={azraqz_logo}
               alt="azraqz"
-              drag
-              dragConstraints={{ left: 10, right: 10, top: 10, bottom: 10 }}
-              dragElastic={0.05}
-              className="azraqz-logo"
+              className="w-[171px] h-32 azraqz-logo"
             />
           </a>
           <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
             2020-2024
           </p>
-        </motion.div>
+        </div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />
-      <div className="flex flex-col sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8">
+      <div className="flex flex-col flex-hidden sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8 mt-8">
         <div className="flex justify-center lg:justify-start ">
-          <img src={karma_logo} alt="karma" className="md:w-auto w-[100px] h-[110px]" />
+          <img src={kmct_logo} alt="karma" className="md:w-auto w-[100px] h-[110px]" />
         </div>
-        <div className="flex justify-center">
-          <a href="">
-            <Link
-              to="https://docs.google.com/document/d/1VOnAodNTeF8ShOCxxVb_AXnxLKg2jKZCUY0QxbQd4nE/edit"
-              target="blank"
-            >
-              <h1 className="px-[20px]">Terms</h1>
-            </Link>
-          </a>
-          <a href="">
-            <Link
-              to="https://docs.google.com/document/d/1cJfjOhoEfW_JhiMF-tUJXNWwRKxSIN-KrIlJCnh0EZ4/edit"
-              target="blank"
-            >
-              <h1 className="px-[20px]">Privacy</h1>
-            </Link>
-          </a>
-          <a href="">
-            <h1 className="px-[20px]">Cookies</h1>
-          </a>
-          <a href="">
-            <Link
-              to="https://docs.google.com/document/d/1K0En27BTf6KJB2eHZmnr7BAMDWK8T83--8HJOu-GkA0/edit"
-              target="blank"
-            >
-              <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
-            </Link>
-          </a>
+        <div className="flex flex-wrap justify-center">
+          <Link to="/l/terms-and-conditions" target="blank">
+            <h1 className="px-[20px]">Terms</h1>
+          </Link>
+
+          <Link to="/l/privacy-policy" target="blank">
+            <h1 className="px-[20px]">Privacy</h1>
+          </Link>
+          <Link to="/l/shipping-and-delivery" target="blank">
+            <h1 className="px-[20px]">Shipping & Delivery</h1>
+          </Link>
+
+          <Link to="/cancellation" target="blank">
+            <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
+          </Link>
         </div>
         <div className="flex">
           <a
