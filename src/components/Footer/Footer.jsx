@@ -104,11 +104,11 @@ function Footer() {
           <Link to="/l/privacy-policy" target="blank">
             <h1 className="px-[20px]">Privacy</h1>
           </Link>
-          <Link to="/l/shipping-and-delivery" rel="noopener noreferrer">
+          <Link to="/l/shipping-and-delivery" target="blank">
             <h1 className="px-[20px]">Shipping & Delivery</h1>
           </Link>
 
-          <Link to="/cancellation" target="_blank">
+          <Link to="/cancellation" target="blank">
             <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
           </Link>
         </div>
