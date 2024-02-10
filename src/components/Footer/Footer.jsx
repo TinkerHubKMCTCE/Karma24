@@ -1,8 +1,7 @@
-import React from "react";
-import "./Footer.css";
+import { Link } from "react-router-dom";
+
 import kmct_logo from "../../assets/kmct-logo.svg";
 import azraqz_logo from "../../assets/azraqz-logo.svg";
-import { NavLink, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +11,8 @@ import {
   faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -36,8 +37,8 @@ function Footer() {
           <a href="#events">
             <p>Events</p>
           </a>
-          <Link to="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7" target="blank">
-            <a href="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7" target="blank">
+          <Link to="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7">
+            <a href="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7">
               <p>College MAP</p>
             </a>
           </Link>
@@ -69,18 +70,13 @@ function Footer() {
             </a>
           </Link>
           <Link to="/l/contact" target="_blank">
-          <p>Contact us</p>
+            <p>Contact us</p>
           </Link>
-          
         </div>
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
           <p className="font-sans uppercase">Powered By</p>
           <a href="https://www.instagram.com/tm_azraqz/">
-            <img
-              src={azraqz_logo}
-              alt="azraqz"
-              className="w-[171px] h-32 azraqz-logo"
-            />
+            <img src={azraqz_logo} alt="azraqz" className="w-[171px] h-32 azraqz-logo" />
           </a>
           <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
             2020-2024
@@ -90,25 +86,21 @@ function Footer() {
       <hr className="w-full max-w-screen-xl divider" />
       <div className="flex flex-col flex-hidden sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8 mt-8">
         <div className="flex justify-center lg:justify-start ">
-          <img
-            src={kmct_logo}
-            alt="karma"
-            className="md:w-auto h-16"
-          />
+          <img src={kmct_logo} alt="karma" className="md:w-auto w-[100px] h-[110px]" />
         </div>
         <div className="flex flex-wrap justify-center">
-          <Link to="/terms" target="blank">
+          <Link to="/terms">
             <h1 className="px-[20px]">Terms</h1>
           </Link>
 
-          <Link to="/l/privacy-policy" target="blank">
+          <Link to="/l/privacy-policy">
             <h1 className="px-[20px]">Privacy</h1>
           </Link>
-          <Link to="/l/shipping-and-delivery" target="blank">
+          <Link to="/l/shipping-and-delivery">
             <h1 className="px-[20px]">Shipping & Delivery</h1>
           </Link>
 
-          <Link to="/cancellation" target="blank">
+          <Link to="/cancellation">
             <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
           </Link>
         </div>
@@ -119,16 +111,10 @@ function Footer() {
           >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a
-            className="icon-container"
-            href="https://www.youtube.com/@karmakmct7265"
-          >
+          <a className="icon-container" href="https://www.youtube.com/@karmakmct7265">
             <FontAwesomeIcon icon={faYoutube} />
           </a>
-          <a
-            className="icon-container"
-            href="https://www.instagram.com/karmakmct/"
-          >
+          <a className="icon-container" href="https://www.instagram.com/karmakmct/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>

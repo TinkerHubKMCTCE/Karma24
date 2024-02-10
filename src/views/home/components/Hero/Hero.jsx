@@ -47,13 +47,10 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.3 }}
                 className="overflow-x-clip"
               >
-                <motion.img
+                <img
                   className="max-w-xl mx-auto w-full cursor-grab mix-blend-screen transition-all duration-300 ease-out"
                   src={budha}
                   alt="budha"
-                  drag
-                  dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-                  dragElastic={0.05}
                 />
               </motion.div>
             </div>
