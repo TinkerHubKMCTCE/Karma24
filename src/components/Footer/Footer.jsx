@@ -104,7 +104,7 @@ function Footer() {
           <Link to="/l/privacy-policy" target="blank">
             <h1 className="px-[20px]">Privacy</h1>
           </Link>
-          <Link to="/l/shipping-and-delivery">
+          <Link to="/l/shipping-and-delivery" rel="noopener noreferrer">
             <h1 className="px-[20px]">Shipping & Delivery</h1>
           </Link>
 
