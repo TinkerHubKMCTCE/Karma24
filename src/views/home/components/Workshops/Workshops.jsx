@@ -22,7 +22,7 @@ const WorkshopsSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ margin: "20px", amount: "all" }}
-          className="big-green-title  mb-4"
+          className="big-green-title mb-4"
         >
           Workshops
         </motion.h2>

@@ -1,8 +1,7 @@
-import React from "react";
-import "./Footer.css";
-import karma_logo from "../../assets/karma-logo-color.svg";
+import { Link } from "react-router-dom";
+
+import kmct_logo from "../../assets/kmct-logo.svg";
 import azraqz_logo from "../../assets/azraqz-logo.svg";
-import { NavLink, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +11,8 @@ import {
   faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -36,8 +37,8 @@ function Footer() {
           <a href="#events">
             <p>Events</p>
           </a>
-          <Link to="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7" target="blank">
-            <a href="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7" target="blank">
+          <Link to="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7">
+            <a href="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7">
               <p>College MAP</p>
             </a>
           </Link>
@@ -57,9 +58,9 @@ function Footer() {
           </a>
         </div>
         <div className="">
-          <a href="">
-            <h1>Event Home</h1>
-          </a>
+          <Link to="/">
+            <p>Event Home</p>
+          </Link>
           <a href="">
             <p>About karma</p>
           </a>
@@ -68,18 +69,14 @@ function Footer() {
               <p>Ambassador Login</p>
             </a>
           </Link>
-          <a href="">
+          <Link to="/l/contact" target="_blank">
             <p>Contact us</p>
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
-        <p className="font-sans uppercase">Powered By</p>
+          <p className="font-sans uppercase">Powered By</p>
           <a href="https://www.instagram.com/tm_azraqz/">
-            <img
-              src={azraqz_logo}
-              alt="azraqz"
-              className="w-[171px] h-[162px] azraqz-logo"
-            />
+            <img src={azraqz_logo} alt="azraqz" className="w-[171px] h-32 azraqz-logo" />
           </a>
           <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
             2020-2024
@@ -87,42 +84,25 @@ function Footer() {
         </div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />
-      <div className="flex flex-col sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8 pt-[20px]">
+      <div className="flex flex-col flex-hidden sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8 mt-8">
         <div className="flex justify-center lg:justify-start ">
-          <img
-            src={karma_logo}
-            alt="karma"
-            className="md:w-auto w-[100px] h-[110px]"
-          />
+          <img src={kmct_logo} alt="karma" className="md:w-auto w-[100px] h-[110px]" />
         </div>
-        <div className="flex justify-center">
-          <a href="">
-            <Link
-              to="https://docs.google.com/document/d/1VOnAodNTeF8ShOCxxVb_AXnxLKg2jKZCUY0QxbQd4nE/edit"
-              target="blank"
-            >
-              <h1 className="px-[20px]">Terms</h1>
-            </Link>
-          </a>
-          <a href="">
-            <Link
-              to="https://docs.google.com/document/d/1cJfjOhoEfW_JhiMF-tUJXNWwRKxSIN-KrIlJCnh0EZ4/edit"
-              target="blank"
-            >
-              <h1 className="px-[20px]">Privacy</h1>
-            </Link>
-          </a>
-          <a href="">
-            <h1 className="px-[20px]">Cookies</h1>
-          </a>
-          <a href="">
-            <Link
-              to="https://docs.google.com/document/d/1K0En27BTf6KJB2eHZmnr7BAMDWK8T83--8HJOu-GkA0/edit"
-              target="blank"
-            >
-              <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
-            </Link>
-          </a>
+        <div className="flex flex-wrap justify-center">
+          <Link to="/terms">
+            <h1 className="px-[20px]">Terms</h1>
+          </Link>
+
+          <Link to="/l/privacy-policy">
+            <h1 className="px-[20px]">Privacy</h1>
+          </Link>
+          <Link to="/l/shipping-and-delivery">
+            <h1 className="px-[20px]">Shipping & Delivery</h1>
+          </Link>
+
+          <Link to="/cancellation">
+            <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
+          </Link>
         </div>
         <div className="flex">
           <a
@@ -131,16 +111,10 @@ function Footer() {
           >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a
-            className="icon-container"
-            href="https://www.youtube.com/@karmakmct7265"
-          >
+          <a className="icon-container" href="https://www.youtube.com/@karmakmct7265">
             <FontAwesomeIcon icon={faYoutube} />
           </a>
-          <a
-            className="icon-container"
-            href="https://www.instagram.com/karmakmct/"
-          >
+          <a className="icon-container" href="https://www.instagram.com/karmakmct/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
