@@ -11,6 +11,7 @@ import AmbassadorDashboard from "./views/AmbassadorDashboard";
 import Tickets from "./views/Tickets";
 import StartingSoon from "./views/StartingSoon";
 import LegalPage from "./views/home/LegalPage";
+import CancelPage from "./views/home/cancellation";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
       { path: "tickets", element: <Tickets /> },
       { path: "dashboard", element: <AmbassadorDashboard /> },
       { path: "/l/:slug", element: <LegalPage/> },
-
+      { path: "cancellation", element: <CancelPage/> },
+      
     ],
   },
 ]);
