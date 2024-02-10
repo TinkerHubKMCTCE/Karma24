@@ -1,4 +1,3 @@
-import { NavLink, Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import kmct_logo from "../../assets/kmct-logo.svg";
@@ -12,10 +11,6 @@ import {
   faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-
-import "./Footer.css";
-import karma_logo from "../../assets/karma-logo-color.svg";
-import azraqz_logo from "../../assets/azraqz-logo.svg";
 
 import "./Footer.css";
 
@@ -81,11 +76,7 @@ function Footer() {
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
           <p className="font-sans uppercase">Powered By</p>
           <a href="https://www.instagram.com/tm_azraqz/">
-            <motion.img
-              src={azraqz_logo}
-              alt="azraqz"
-              className="w-[171px] h-32 azraqz-logo"
-            />
+            <img src={azraqz_logo} alt="azraqz" className="w-[171px] h-32 azraqz-logo" />
           </a>
           <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
             2020-2024
