@@ -9,7 +9,7 @@ const StartingSoon = () => {
   return (
     <div className="flex flex-col justify-center items-center py-56 px-4">
       <h1 className="text-7xl sm:text-8xl font-retroTeam uppercase text-center">
-        Starting on Feb 10, 2024
+        Starting on Feb 11, 2024
       </h1>
       <p className="text-4xl sm:text-5xl font-orbitron uppercase text-center">
         Please Stand By
