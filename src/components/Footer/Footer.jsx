@@ -57,9 +57,9 @@ function Footer() {
           </a>
         </div>
         <div className="">
-          <a href="">
-            <h1>Event Home</h1>
-          </a>
+          <Link to="/">
+            <p>Event Home</p>
+          </Link>
           <a href="">
             <p>About karma</p>
           </a>
@@ -68,9 +68,10 @@ function Footer() {
               <p>Ambassador Login</p>
             </a>
           </Link>
-          <a href="">
-            <p>Contact us</p>
-          </a>
+          <Link to="/l/contact" target="_blank">
+          <p>Contact us</p>
+          </Link>
+          
         </div>
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
           <p className="font-sans uppercase">Powered By</p>
@@ -96,7 +97,7 @@ function Footer() {
           />
         </div>
         <div className="flex flex-wrap justify-center">
-          <Link to="/l/terms-and-conditions" target="blank">
+          <Link to="/terms" target="blank">
             <h1 className="px-[20px]">Terms</h1>
           </Link>
 
