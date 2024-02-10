@@ -12,6 +12,7 @@ import Tickets from "./views/Tickets";
 import StartingSoon from "./views/StartingSoon";
 import LegalPage from "./views/home/LegalPage";
 import CancelPage from "./views/home/cancellation";
+import Terms from "./views/home/terms";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: "dashboard", element: <AmbassadorDashboard /> },
       { path: "/l/:slug", element: <LegalPage/> },
       { path: "cancellation", element: <CancelPage/> },
+      { path: "terms", element: <Terms/> },
       
     ],
   },
