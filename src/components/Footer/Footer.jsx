@@ -1,9 +1,6 @@
-import React from "react";
-import "./Footer.css";
-import karma_logo from "../../assets/karma-logo-color.svg";
-import azraqz_logo from "../../assets/azraqz-logo.svg";
-import { NavLink, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -12,6 +9,11 @@ import {
   faWhatsapp,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+
+import karma_logo from "../../assets/karma-logo-color.svg";
+import azraqz_logo from "../../assets/azraqz-logo.svg";
+
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -72,28 +74,27 @@ function Footer() {
             <p>Contact us</p>
           </a>
         </div>
-        <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
-        <p className="font-sans uppercase">Powered By</p>
+        <motion.div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
+          <p className="font-sans uppercase">Powered By</p>
           <a href="https://www.instagram.com/tm_azraqz/">
-            <img
+            <motion.img
               src={azraqz_logo}
               alt="azraqz"
-              className="w-[171px] h-[162px] azraqz-logo"
+              drag
+              dragConstraints={{ left: 10, right: 10, top: 10, bottom: 10 }}
+              dragElastic={0.05}
+              className="azraqz-logo"
             />
           </a>
           <p className="text-3xl font-orbitron tracking-wide font-bold text-white">
             2020-2024
           </p>
-        </div>
+        </motion.div>
       </div>
       <hr className="w-full max-w-screen-xl divider" />
       <div className="flex flex-col sm:flex-row gap-8 justify-between items-center container max-w-screen-xl mb-8">
         <div className="flex justify-center lg:justify-start ">
-          <img
-            src={karma_logo}
-            alt="karma"
-            className="md:w-auto w-[100px] h-[110px]"
-          />
+          <img src={karma_logo} alt="karma" className="md:w-auto w-[100px] h-[110px]" />
         </div>
         <div className="flex justify-center">
           <a href="">
@@ -131,16 +132,10 @@ function Footer() {
           >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a
-            className="icon-container"
-            href="https://www.youtube.com/@karmakmct7265"
-          >
+          <a className="icon-container" href="https://www.youtube.com/@karmakmct7265">
             <FontAwesomeIcon icon={faYoutube} />
           </a>
-          <a
-            className="icon-container"
-            href="https://www.instagram.com/karmakmct/"
-          >
+          <a className="icon-container" href="https://www.instagram.com/karmakmct/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
