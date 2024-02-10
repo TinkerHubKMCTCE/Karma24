@@ -37,8 +37,8 @@ function Footer() {
           <a href="#events">
             <p>Events</p>
           </a>
-          <Link to="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7" target="blank">
-            <a href="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7" target="blank">
+          <Link to="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7">
+            <a href="https://maps.app.goo.gl/S9Q6vhUcStcXADbj7">
               <p>College MAP</p>
             </a>
           </Link>
@@ -70,9 +70,8 @@ function Footer() {
             </a>
           </Link>
           <Link to="/l/contact" target="_blank">
-          <p>Contact us</p>
+            <p>Contact us</p>
           </Link>
-          
         </div>
         <div className="flex flex-col items-center sm:col-span-3 md:col-span-1">
           <p className="font-sans uppercase">Powered By</p>
@@ -90,18 +89,18 @@ function Footer() {
           <img src={kmct_logo} alt="karma" className="md:w-auto w-[100px] h-[110px]" />
         </div>
         <div className="flex flex-wrap justify-center">
-          <Link to="/terms" target="blank">
+          <Link to="/terms">
             <h1 className="px-[20px]">Terms</h1>
           </Link>
 
-          <Link to="/l/privacy-policy" target="blank">
+          <Link to="/l/privacy-policy">
             <h1 className="px-[20px]">Privacy</h1>
           </Link>
-          <Link to="/l/shipping-and-delivery" target="blank">
+          <Link to="/l/shipping-and-delivery">
             <h1 className="px-[20px]">Shipping & Delivery</h1>
           </Link>
 
-          <Link to="/cancellation" target="blank">
+          <Link to="/cancellation">
             <h1 className="px-[20px]">Refund & Cancellation Policy</h1>
           </Link>
         </div>
