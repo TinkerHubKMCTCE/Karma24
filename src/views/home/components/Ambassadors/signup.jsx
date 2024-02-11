@@ -31,13 +31,12 @@ const SignupView = () => {
 
   const submitForm = async (values) => {
     window.scrollTo(0, 0);
-    console.log(JSON.stringify(values, null, 2));
     setIsSubmitting(true);
     try {
       const url = import.meta.env.VITE_API_URL + "/register/";
       const res = await axios.post(url, values);
-      console.log(res.data);
-      if (res.status === 201) navigate("/dashboard");
+      if (res.status === 201)
+        navigate("/dashboard", { state: res.data.response.data.user.referral_code });
       else throw new Error("Something went wrong");
     } catch (error) {
       let erros = error.response.data.response.errors;
