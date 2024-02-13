@@ -20,15 +20,14 @@ const AmbassadorsSection = () => {
               Campus Ambassadors Program
             </h1>
             <p className="text-justify mt-4">
-              KMCT College of Engineering presents Campus Ambassadorship Program
-              as a part of Karma 2024! Represent your college for Karma and get
-              an opportunity to increase your network and reach. Be a Campus
-              Ambassador and refer students from your college to participate in
-              our programs, workshops and events and stand a chance to win
-              exciting prizes worth over 2k!
+              KMCT College of Engineering presents Campus Ambassadorship Program as a part
+              of Karma 2024! Represent your college for Karma and get an opportunity to
+              increase your network and reach. Be a Campus Ambassador and refer students
+              from your college to participate in our programs, workshops and events and
+              stand a chance to win exciting prizes worth over 2k!
             </p>
             <button
-              onClick={() => navigate("/stand-by")}
+              onClick={() => navigate("/signup")}
               className="bg-[#8EFF09] hover:bg-[#09D3FF] text-black font-bold text-lg py-2 px-10 tracking-wide rounded-xl place-items-center mt-8 "
             >
               Enroll Now

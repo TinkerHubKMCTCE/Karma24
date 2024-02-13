@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link, json, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -32,11 +32,8 @@ const LoginView = () => {
         navigate("/dashboard", { state: res.data.response.data.user.referral_code });
       else throw new Error("Something went wrong");
     } catch (error) {
-      // let erros = error.response.data.response.errors;
-      // // formate this list of strings to display in an alert
-      // let errorList = "";
-      // erros.forEach((error) => (errorList += error + "\n"));
-      alert(error.response.data.response.errors);
+      console.log("error", error);
+      // alert(error.response.data.response.errors);
     } finally {
       setIsSubmitting(false);
     }
@@ -66,7 +63,7 @@ const LoginView = () => {
                 validationSchema={LoginSchema}
                 onSubmit={submitForm}
               >
-                <Form className="space-y-4 md:space-y-6" action="#">
+                <Form className="space-y-4 md:space-y-6">
                   <div>
                     <label
                       for="email"
