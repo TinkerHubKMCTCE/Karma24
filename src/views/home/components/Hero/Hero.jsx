@@ -6,6 +6,8 @@ import FilledButton from "../../../../components/FilledButton";
 import karma24 from "../../../../assets/karma24.svg";
 import budha from "../../../../assets/images/buddha.jpg";
 import heroBg from "../../../../assets/hero-bg.svg";
+import kmctLogo from "../../../../assets/kmct-logo.png";
+
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -30,6 +32,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.3 }}
                 className="grid place-items-center mt-12"
               >
+                <img src={kmctLogo} alt="KMCT CE" className="w-40 lg:w-56 mx-auto mb-6" />
                 <img
                   loading="lazy"
                   className="max-w-xl mx-auto w-full"
