@@ -32,6 +32,17 @@ const EventDetailsView = ({ type }) => {
 
   const item = list.find((e) => e.id === id);
 
+
+  const handleRegisterClick = () => {
+    if (item.registerLink) {
+      window.open(item.registerLink, '_blank');
+    } else {
+      // Handle case where register link is not available
+      console.error("Register link not available for this item.");
+    }
+  };
+  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -51,7 +62,7 @@ const EventDetailsView = ({ type }) => {
             {item.prize}
           </p>
           <p className="font-bold font-retroTeam text-2xl mt-4">Fee: ₹{item.fee}/-</p>
-          <FilledButton text="REGISTER" onClick={() => navigate("/tickets")} />
+          <FilledButton text="REGISTER" onClick={handleRegisterClick} />
         </div>
         <img src={item.image} alt="" className="h-72 rounded-3xl" />
       </div>
