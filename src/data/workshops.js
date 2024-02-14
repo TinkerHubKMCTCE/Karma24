@@ -8,6 +8,7 @@ const workshops = [
     title: "CADD MODELLING Workshop",
     image: caddImage,
     fee: 399,
+    registerLink: "https://rzp.io/l/lSljXE1CN",
   },
   {
     id: "2",
@@ -19,24 +20,14 @@ const workshops = [
       "KTU Activity point - Upto 20",
     ],
     fee: 99,
+    registerLink: "https://rzp.io/l/UgNkXAknUI",
   },
   {
     id: "3",
     title: "CYBERSECURITY Workshop",
     image: cyberImage,
-    fee: 399,
-  },
-  {
-    id: "4",
-    title: "CADD MODELLING Workshop",
-    image: caddImage,
-    fee: 399,
-  },
-  {
-    id: "5",
-    title: "CYBERSECURITY Workshop",
-    image: cyberImage,
-    fee: 399,
+    fee: 199,
+    registerLink: "https://rzp.io/l/F1ebQgdOu",
   },
 ];
 

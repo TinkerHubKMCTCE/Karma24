@@ -15,6 +15,7 @@ const events = [
     venue: "Main Stage",
     fee: "299 per team",
     prize: "1st Prize: ₹3000, 2nd Prize: ₹1500",
+    registerLink: "https://rzp.io/l/LnZMBfr",
   },
   {
     id: "2",
@@ -24,6 +25,7 @@ const events = [
     description: ["Stack: Hardware, Software", "Team of 3 or 4 members"],
     fee: "300 per team",
     prize: "1st Prize: ₹15000, 2nd Prize: ₹10000",
+    registerLink: "",
   },
   {
     id: "3",
@@ -33,6 +35,7 @@ const events = [
     description: ["Individual Participation"],
     fee: 99,
     prize: "1st Prize: ₹2000, 2nd Prize: ₹1000",
+    registerLink: "",
   },
   {
     id: "4",
@@ -41,6 +44,7 @@ const events = [
     image: vrImage,
     description: ["6+ Adeventres and Games"],
     fee: 50,
+    registerLink: "https://rzp.io/l/ZfsNGX2",
   },
   {
     id: "5",
@@ -49,15 +53,21 @@ const events = [
     image: techquiz,
     fee: 99,
     prize: "1st Prize: ₹2000, 2nd Prize: ₹1000",
+    registerLink: "https://rzp.io/l/ZKrRwFL7V",
   },
   {
     id: "6",
     title: "EXPO",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
     image: expo,
-    description: [],
+    description: [
+      " For ITI, Polytechnic and Engineering students",
+      "A team of 3 to 4 members",
+      "Category - Working model and still model",
+    ],
     prize: "Prize: ₹10000 for each category",
     fee: 399,
+    registerLink: "https://rzp.io/l/SMQTsvP1z",
   },
 ];
 
