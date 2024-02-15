@@ -41,7 +41,7 @@ const events = [
     title: "VR EXPERIENCE",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
     image: vrImage,
-    description: ["6+ Adeventres and Games"],
+    description: ["6+ Adeventures and Games"],
     fee: 49,
     registerLink: "https://rzp.io/l/ZfsNGX2",
   },
