@@ -5,6 +5,8 @@ import dj2 from "../../../assets/images/dj2.png";
 import ferrari from "../../../assets/images/ferrari.jpeg";
 import sithara from "../../../assets/images/sithara.png";
 import babs from "../../../assets/images/babs.png";
+import olly from "../../../assets/images/olly1.png";
+import samurai from "../../../assets/images/samurai.png";
 
 import { motion } from "framer-motion";
 
@@ -55,14 +57,7 @@ const SpotLight = () => {
     ],
   };
 
-  const items = [
-    neeraj,
-    dj1,
-    dj2,
-    ferrari,
-    sithara,
-    babs,
-  ];
+  const items = [neeraj, dj1, dj2, ferrari, sithara, babs, olly, samurai];
 
   return (
     <section className="py-20 font-inversionz text-6xl sm:text-8xl text-karma-green">
@@ -96,9 +91,6 @@ const SpotLight = () => {
 };
 
 export default SpotLight;
-
-
-
 
 // "https://media.istockphoto.com/id/971433328/vector/pink-blue-neon-animated-vj-background.jpg?s=612x612&w=0&k=20&c=Ul7JNYKyEaXm_S6FfNsNM3nk9CD_7OFUS83UXXp2hrE=",
 //     "https://edge.99images.com/photos/celebrities/neeraj-madhav/neeraj-madhav-best-hd-photos-download-1080p-whatsapp-dpstatus-images-drg5.jpg",
