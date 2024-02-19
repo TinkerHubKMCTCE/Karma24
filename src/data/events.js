@@ -24,7 +24,7 @@ const events = [
     description: ["Stack: Hardware, Software", "Team of 3 or 4 members"],
     fee: "300 per team",
     prize: "1st Prize: ₹15000, 2nd Prize: ₹10000",
-    registerLink: "",
+    registerLink: "https://rzp.io/l/2LP6j1GlVc",
   },
   {
     id: "cadd-moddeling",
