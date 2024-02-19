@@ -17,7 +17,7 @@ const workshops = [
   },
   {
     id: "2",
-    title: "ELECTRONIC VEHICLE Workshop",
+    title: "ELECTRIC VEHICLE Workshop",
     image: evImage,
     dateTime: "02 MARCH 2024, 10 AM - 1 PM",
     description: [

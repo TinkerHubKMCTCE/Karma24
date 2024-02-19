@@ -7,7 +7,7 @@ import bridgeit from "../assets/events/bridgeit.png";
 
 const events = [
   {
-    id: "1",
+    id: "bridge-it",
     title: "Bridge It",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
     image: bridgeit,
@@ -17,17 +17,17 @@ const events = [
     registerLink: "https://rzp.io/l/LnZMBfr",
   },
   {
-    id: "2",
+    id: "hackathon",
     title: "HACKATHON",
     dateTime: "01 MARCH 2024, 10 AM - 02 MARCH 2024, 10 AM",
     image: hackImage,
     description: ["Stack: Hardware, Software", "Team of 3 or 4 members"],
     fee: "300 per team",
     prize: "1st Prize: ₹15000, 2nd Prize: ₹10000",
-    registerLink: "",
+    registerLink: "https://rzp.io/l/2LP6j1GlVc",
   },
   {
-    id: "3",
+    id: "cadd-moddeling",
     title: "Cadd Modeling",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
     image: caddImage,
@@ -37,16 +37,16 @@ const events = [
     registerLink: "https://rzp.io/l/xJQyrDE",
   },
   {
-    id: "4",
+    id: "vr-expo",
     title: "VR EXPERIENCE",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
     image: vrImage,
-    description: ["6+ Adeventres and Games"],
+    description: ["6+ Adeventures and Games"],
     fee: 49,
     registerLink: "https://rzp.io/l/ZfsNGX2",
   },
   {
-    id: "5",
+    id: "tech-quiz",
     title: "Tech Quiz",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
     image: techquiz,
@@ -56,7 +56,7 @@ const events = [
     registerLink: "https://rzp.io/l/ZKrRwFL7V",
   },
   {
-    id: "6",
+    id: "expo",
     title: "EXPO",
     dateTime: "02 MARCH 2024, 10 AM - 3 PM",
     image: expo,
