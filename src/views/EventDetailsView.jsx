@@ -36,7 +36,7 @@ const EventDetailsView = ({ type }) => {
     if (item.registerLink) {
       window.open(item.registerLink, "_blank");
     } else {
-      alert("Registration will start Soon!")
+      alert("Registration will start Soon!");
     }
   };
 
@@ -53,16 +53,12 @@ const EventDetailsView = ({ type }) => {
         <div>
           <p className="text-2xl font-retroTeam tracking-wide leading-8">
             {item.dateTime} <br />
-            {item.description
-              ? item.description.map((desc) => <p>{desc}</p>)
-              : null}
+            {item.description ? item.description.map((desc) => <p>{desc}</p>) : null}
           </p>
           <p className="font-bold font-retroTeam text-3xl mt-4 text-karma-green">
             {item.prize}
           </p>
-          <p className="font-bold font-retroTeam text-2xl mt-4">
-            Fee: ₹{item.fee}/-
-          </p>
+          <p className="font-bold font-retroTeam text-2xl mt-4">Fee: ₹{item.fee}</p>
           <FilledButton text="REGISTER" onClick={handleRegisterClick} />
         </div>
         <img src={item.image} alt="" className="h-72 rounded-3xl" />
