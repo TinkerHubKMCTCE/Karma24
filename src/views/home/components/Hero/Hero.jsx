@@ -33,17 +33,11 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.3 }}
                 className="grid place-items-center mt-12"
               >
-                <div className="flex">
-                  <img
-                    src={kmctLogo}
-                    alt="KMCT CE"
-                    className="h-10 lg:h-12 mx-auto mb-6"
-                  />
-                  <img
-                    src={brdigeOnLogo}
-                    alt="KMCT CE"
-                    className="h-10 lg:h-12 mx-auto mb-6"
-                  />
+                <div className="flex mb-6 mx-auto gap-2">
+                  <img src={kmctLogo} alt="KMCT CE" className="h-12 lg:h-14" />
+                  <div className="bg-white h-12 lg:h-14 p-2 rounded-xl">
+                    <img src={brdigeOnLogo} alt="KMCT CE" className="h-full" />
+                  </div>
                 </div>
                 <img
                   loading="lazy"
