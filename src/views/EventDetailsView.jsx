@@ -61,7 +61,7 @@ const EventDetailsView = ({ type }) => {
           <p className="font-bold font-retroTeam text-2xl mt-4">Fee: ₹{item.fee}</p>
           <FilledButton text="REGISTER" onClick={handleRegisterClick} />
         </div>
-        <img src={item.image} alt="" className="h-72 rounded-3xl" />
+        <img src={item.image} alt="" className="h-72 md:h-[500px] rounded-xl" />
       </div>
     </div>
   );
