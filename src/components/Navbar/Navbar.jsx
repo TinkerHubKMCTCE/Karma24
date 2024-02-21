@@ -36,9 +36,9 @@ const Navbar = () => {
     { id: 1, text: "Events", link: "/", sectionId: "events" },
     { id: 2, text: "Workshops", link: "/", sectionId: "workshops" },
     { id: 3, text: "Games", link: "/", sectionId: "competitions" },
-    { id: 5, text: "Tickets", link: "/tickets" },
-    // { id: 6, text: "Ambassadors", link: "/stand-by" },
     { id: 6, text: "Ambassadors", link: "/login" },
+    { id: 5, text: "Get Tickets", link: "/tickets" },
+    // { id: 6, text: "Ambassadors", link: "/stand-by" },
   ];
 
   return (
@@ -69,8 +69,8 @@ const Navbar = () => {
                 to={item.link}
                 onClick={() => handleScrollToSection(item.sectionId)}
                 className={`p-1 hover:text-[#8EFF09] rounded-xl px-6 cursor-pointer duration-300 ${
-                  item.text === "Ambassadors"
-                    ? "bg-[#8EFF09] hover:text-black px-8 mr-10 text-black"
+                  item === navItems[navItems.length - 1]
+                    ? "bg-[#8EFF09] font-orbitron font-bold text-lg hover:text-black px-8 mr-10 text-black"
                     : ""
                 }`}
               >
@@ -105,8 +105,8 @@ const Navbar = () => {
               }}
               to={item.link}
               className={`p-4 hover:text-karma-green text-2xl rounded-xl px-6 cursor-pointer duration-300 ${
-                item.text === "Ambassadors"
-                  ? "bg-[#8EFF09] hover:text-white hover:bg-karma-blue px-8 mt-2 mx-6 text-black text-xl grid place-items-center"
+                item === navItems[navItems.length - 1]
+                  ? "bg-[#8EFF09] font-orbitron font-bold text-lg hover:text-white hover:bg-karma-blue px-8 mt-2 mx-6 text-black grid place-items-center"
                   : ""
               }`}
             >

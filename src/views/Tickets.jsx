@@ -10,7 +10,7 @@ const Tickets = () => {
   const ticketOptions = [
     {
       title: "Day 2",
-      price: "₹199",
+      price: "₹200",
       description: ["Early bird tickets for the first 100 participants"],
       bg: "https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg",
       backgroundColor: "rgba(0, 0, 0, 0.8)",
@@ -18,7 +18,7 @@ const Tickets = () => {
     },
     {
       title: "Day 3",
-      price: "₹299",
+      price: "₹300",
       description: [
         "Regular tickets for the next 100 participants",
         "Regular tickets for the next 100 participants",
@@ -39,7 +39,7 @@ const Tickets = () => {
 
   return (
     <div className="container mx-auto max-w-screen-xl">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center py-56 px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center py-20 lg:py-44 px-8">
         {ticketOptions.map((option, index) => (
           <div
             key={index}
