@@ -1,12 +1,14 @@
 import caddImage from "../assets/events/workshop-cadd.jpg";
 import evImage from "../assets/workshops/workshop-ev.jpg";
 import cyberImage from "../assets/workshops/workshop-cyber.jpg";
+import bimPoster from "../assets/workshops/bim-1.jpeg";
 
 const workshops = [
   {
     id: "1",
     title: "BIM Workshop",
     image: caddImage,
+    image1: bimPoster,
     dateTime: "02 MARCH 2024, 10 AM - 1 PM",
     description: [
       "Resource Person - Aysha Burhana, Faculty, Cadd Centre",
