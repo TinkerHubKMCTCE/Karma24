@@ -48,7 +48,7 @@ const Hero = () => {
                 <p className="mt-6 font-inversionz text-center text-3xl uppercase font-medium tracking-tighter">
                   what goes around comes around
                 </p>
-                <FilledButton text="Buy Tickets" onClick={() => navigate("/tickets")} />
+                <FilledButton text="Get Tickets" onClick={() => navigate("/tickets")} />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
