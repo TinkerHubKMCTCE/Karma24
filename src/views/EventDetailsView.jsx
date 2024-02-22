@@ -6,7 +6,7 @@ import FilledButton from "../components/FilledButton";
 
 import events from "../data/events";
 import workshops from "../data/workshops";
-import games from "../data/games";
+import games from "../data/compeitions";
 
 const EventDetailsView = ({ type }) => {
   const { id } = useParams();
@@ -46,11 +46,11 @@ const EventDetailsView = ({ type }) => {
 
   return (
     <div className="container mx-auto max-w-screen-xl py-20 px-4">
-      <h1 className="text-karma-blue font-bold font-retroTeam text-5xl sm:text-7xl">
-        {item.title}
-      </h1>
       <div className="flex justify-between flex-wrap-reverse gap-8 mt-8">
         <div>
+          <h1 className="text-karma-blue font-bold font-retroTeam text-5xl sm:text-7xl">
+            {item.title}
+          </h1>
           <p className="text-2xl font-retroTeam tracking-wide leading-8">
             {item.dateTime} <br />
             {item.description ? item.description.map((desc) => <p>{desc}</p>) : null}

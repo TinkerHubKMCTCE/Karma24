@@ -5,6 +5,7 @@ import EventsSection from "./components/Events/EventsSection";
 import GamesSection from "./components/Games/GamesSection";
 import SpotLight from "./components/SpotLight";
 import { useEffect } from "react";
+import CompetitionsSection from "./components/Games/CompetitionsSection";
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <AmbassadorsSection />
       <EventsSection />
       <WorkshopsSection />
+      <CompetitionsSection />
       <GamesSection />
       <SpotLight />
     </>
