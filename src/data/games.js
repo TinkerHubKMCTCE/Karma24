@@ -86,7 +86,7 @@ const games = [
   },
   {
     id: "pattu",
-    title: "Mappila Pattu",
+    // title: "Mappila Pattu",
     dateTime: "",
     image: mappila,
     description: [],
@@ -96,7 +96,7 @@ const games = [
   },
   {
     id: "mr",
-    title: "Mr and Miss Karma",
+    // title: "Mr and Miss Karma",
     dateTime: "",
     image: mrkarma,
     description: [],
