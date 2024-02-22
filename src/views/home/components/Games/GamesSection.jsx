@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 import games from "../../../../data/games";
 
-import GameCard from "./components/GameCard";
+import GameCard from "./GameCard";
 
 const GamesSection = () => {
   return (
@@ -29,7 +29,7 @@ const GamesSection = () => {
         <div className="swiper-container px-10">
           <Swiper
             slidesPerView={1}
-            spaceBetween={40}
+            spaceBetween={10}
             loop={true}
             navigation={{
               nextEl: ".swiper-button-next",
