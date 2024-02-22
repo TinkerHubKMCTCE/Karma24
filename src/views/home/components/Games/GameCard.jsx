@@ -12,7 +12,7 @@ const GameCard = ({ game }) => {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       onClick={() => navigate(`/games/${game.id}`)}
-      className="p-8 rounded-3xl mx-auto game-item"
+      className="p-8 mx-auto game-item"
       style={{
         backgroundImage: `url(${game.image})`,
         backgroundSize: "cover",

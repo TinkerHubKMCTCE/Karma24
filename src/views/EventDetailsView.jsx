@@ -6,7 +6,7 @@ import FilledButton from "../components/FilledButton";
 
 import events from "../data/events";
 import workshops from "../data/workshops";
-import games from "../data/games";
+import games from "../data/compeitions";
 
 const EventDetailsView = ({ type }) => {
   const { id } = useParams();
