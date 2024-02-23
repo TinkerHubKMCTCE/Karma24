@@ -15,7 +15,7 @@ const CompetitionsSection = () => {
     <>
       <div
         id="competitions"
-        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4 -skew-x-3"
+        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4"
       >
         <motion.h2
           initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ const CompetitionsSection = () => {
         >
           Competitions
         </motion.h2>
-        <div className="swiper-container px-10">
+        <div className="swiper-container px-10 -skew-x-6">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -47,7 +47,7 @@ const CompetitionsSection = () => {
           >
             {competitions.map((game) => (
               <SwiperSlide key={game.id}>
-                <GameCard game={game} />
+                <GameCard game={game} isCompetition={true} />
               </SwiperSlide>
             ))}
           </Swiper>

@@ -6,17 +6,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
 import GameCard from "./GameCard";
 import games from "../../../../data/games";
 
 const GamesSection = () => {
   return (
     <>
-      <div
-        id="games"
-        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4 -skew-x-3"
-      >
+      <div id="games" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -26,7 +22,7 @@ const GamesSection = () => {
         >
           Games
         </motion.h2>
-        <div className="swiper-container px-10">
+        <div className="swiper-container px-10 -skew-x-6">
           <Swiper
             slidesPerView={1}
             spaceBetween={4}
