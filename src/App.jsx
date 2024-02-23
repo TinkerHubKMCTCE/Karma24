@@ -29,14 +29,17 @@ const router = createBrowserRouter([
         element: <EventDetailsView type={programType.WORKSHOP} />,
       },
       { path: "games/:id", element: <EventDetailsView type={programType.GAME} /> },
+      {
+        path: "competitions/:id",
+        element: <EventDetailsView type={programType.COMPETITION} />,
+      },
       { path: "login", element: <LoginView /> },
       { path: "signup", element: <SignupView /> },
       { path: "tickets", element: <Tickets /> },
       { path: "dashboard", element: <AmbassadorDashboard /> },
-      { path: "/l/:slug", element: <LegalPage/> },
-      { path: "cancellation", element: <CancelPage/> },
-      { path: "terms", element: <Terms/> },
-      
+      { path: "/l/:slug", element: <LegalPage /> },
+      { path: "cancellation", element: <CancelPage /> },
+      { path: "terms", element: <Terms /> },
     ],
   },
 ]);

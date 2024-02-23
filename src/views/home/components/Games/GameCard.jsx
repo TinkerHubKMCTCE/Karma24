@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 
 import "./Games.css";
 
-
-const GameCard = ({ game }) => {
+const GameCard = ({ game, isCompetition = false }) => {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +11,9 @@ const GameCard = ({ game }) => {
       initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      onClick={() => navigate(`/games/${game.id}`)}
+      onClick={() =>
+        navigate(isCompetition ? `/competitions/${game.id}` : `/games/${game.id}`)
+      }
       className="p-8 mx-auto game-item"
       style={{
         backgroundImage: `url(${game.image})`,
