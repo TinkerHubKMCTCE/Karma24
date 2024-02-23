@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import compeitions from "../../../../data/compeitions";
 
 import GameCard from "./GameCard";
 import games from "../../../../data/games";

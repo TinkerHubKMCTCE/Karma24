@@ -6,7 +6,8 @@ import FilledButton from "../components/FilledButton";
 
 import events from "../data/events";
 import workshops from "../data/workshops";
-import games from "../data/compeitions";
+import games from "../data/games";
+import competitions from "../data/competitions";
 
 const EventDetailsView = ({ type }) => {
   const { id } = useParams();
@@ -27,6 +28,9 @@ const EventDetailsView = ({ type }) => {
       break;
     case programType.WORKSHOP:
       list = workshops;
+      break;
+    case programType.COMPETITION:
+      list = competitions;
       break;
   }
 
@@ -53,12 +57,16 @@ const EventDetailsView = ({ type }) => {
           </h1>
           <p className="text-2xl font-retroTeam tracking-wide leading-8">
             {item.dateTime} <br />
-            {item.description ? item.description.map((desc) => <p>{desc}</p>) : null}
+            {item.description
+              ? item.description.map((desc) => <p>{desc}</p>)
+              : null}
           </p>
           <p className="font-bold font-retroTeam text-3xl mt-4 text-karma-green">
             {item.prize}
           </p>
-          <p className="font-bold font-retroTeam text-2xl mt-4">Fee: ₹{item.fee}</p>
+          <p className="font-bold font-retroTeam text-2xl mt-4">
+            Fee: ₹{item.fee}
+          </p>
           <FilledButton text="REGISTER" onClick={handleRegisterClick} />
         </div>
         <img src={item.image} alt="" className="h-72 md:h-[500px] rounded-xl" />

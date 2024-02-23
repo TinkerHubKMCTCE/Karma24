@@ -1,15 +1,14 @@
-import mehendi from "../assets/images/Mehendi.png";
-import face from "../assets/images/face.png";
-import mirror from "../assets/images/mirror.png";
-import dance from "../assets/images/dance.png";
-import treasure from "../assets/images/treasure.png";
-import touchmenot from "../assets/images/touchmenot.png";
-import shootout from "../assets/images/shootout.png";
-import light from "../assets/images/light.png";
-import mrkarma from "../assets/images/Mr&mrs.jpeg";
+import mehendi from "../assets/images/competitions/mehendi.jpeg";
+import face from "../assets/images/competitions/face.jpeg";
+import mirror from "../assets/images/competitions/mirror.jpeg";
+import dance from "../assets/images/competitions/spotdance.jpeg";
+import light from "../assets/images/competitions/lightmusic.jpeg";
 import mappila from "../assets/images/mappila.jpeg";
+import photography from "../assets/images/competitions/photography.jpeg";
+import standup from "../assets/images/competitions/standup.jpeg";
+import mrkarma from "../assets/images/competitions/Mr&mrs.jpeg";
 
-const compeitions = [
+const competitions = [
   {
     id: "spotdance",
     title: "Spot Dance",
@@ -20,7 +19,6 @@ const compeitions = [
     fee: 49,
     prize: "1st Prize: ₹3000",
     registerLink: "https://rzp.io/l/5MBBvgK",
-    showTitle: true,
   },
   {
     id: "facepainting",
@@ -31,8 +29,6 @@ const compeitions = [
     description: ["Individual Participation"],
     fee: 49,
     registerLink: "https://rzp.io/l/XL6Nn95w",
-    showTitle: true,
-
     prize: "1st Prize: ₹1500",
   },
   {
@@ -44,7 +40,6 @@ const compeitions = [
     description: ["Individual Participation"],
     fee: 49,
     registerLink: "https://rzp.io/l/5HXkSmy",
-    showTitle: true,
 
     prize: "1st Prize: ₹1000, 2nd Prize: prize worth ₹400",
   },
@@ -57,7 +52,6 @@ const compeitions = [
     description: ["Group of 2"],
     fee: 99,
     registerLink: "https://rzp.io/l/tuU537jIQF",
-    showTitle: true,
 
     prize: "1st Prize: ₹1000, 2nd Prize: prize worth ₹400",
   },
@@ -69,7 +63,6 @@ const compeitions = [
     image: light,
     fee: 49,
     registerLink: "https://rzp.io/l/9tzxi6KRo",
-    showTitle: true,
 
     prize: "1st Prize: ₹1000, 2nd Prize: prize worth ₹400",
   },
@@ -77,23 +70,21 @@ const compeitions = [
     id: "sopt-photography",
     title: "Spot Photography ",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
-    image: treasure,
+    image: photography,
     description: [],
     prize: "Prize: ₹2500",
     fee: 49,
     registerLink: "https://rzp.io/l/YxogSIWZqy",
-    showTitle: true,
   },
   {
     id: "stand-up-comedy",
     title: "Stand Up Comedy",
     dateTime: "",
-    image: touchmenot,
+    image: standup,
     description: [],
     prize: "1st Prize: ₹1000, 2nd Prize: prize worth ₹400",
     fee: 49,
     registerLink: "https://rzp.io/l/Kqrs3aQ9o",
-    showTitle: true,
   },
   {
     id: "mappila-pattu",
@@ -117,4 +108,4 @@ const compeitions = [
   },
 ];
 
-export default compeitions;
+export default competitions;

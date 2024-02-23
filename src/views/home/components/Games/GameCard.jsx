@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import "./Games.css";
 
+
 const GameCard = ({ game }) => {
   const navigate = useNavigate();
 

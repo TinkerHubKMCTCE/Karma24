@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import compeitions from "../../../../data/compeitions";
+import competitions from "../../../../data/competitions";
 
 import GameCard from "./GameCard";
 
@@ -45,7 +45,7 @@ const CompetitionsSection = () => {
             }}
             modules={[Navigation]}
           >
-            {compeitions.map((game) => (
+            {competitions.map((game) => (
               <SwiperSlide key={game.id}>
                 <GameCard game={game} />
               </SwiperSlide>
