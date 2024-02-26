@@ -6,13 +6,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import GameCard from "./GameCard";
-import games from "../../../../data/games";
+import competitions from "../../../../data/competitions";
 
-const GamesSection = () => {
+import GameCard from "./GameCard";
+
+const CompetitionsSection = () => {
   return (
     <>
-      <div id="games" className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4">
+      <div
+        id="competitions"
+        className="container max-w-screen-xl mx-auto pt-28 pb-16 px-4"
+      >
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -20,12 +24,12 @@ const GamesSection = () => {
           viewport={{ margin: "20px", amount: "all" }}
           className="big-green-title mb-4"
         >
-          Games
+          Competitions
         </motion.h2>
         <div className="swiper-container px-10 -skew-x-6">
           <Swiper
             slidesPerView={1}
-            spaceBetween={4}
+            spaceBetween={10}
             loop={true}
             navigation={{
               nextEl: ".swiper-button-next",
@@ -41,9 +45,9 @@ const GamesSection = () => {
             }}
             modules={[Navigation]}
           >
-            {games.map((game) => (
+            {competitions.map((game) => (
               <SwiperSlide key={game.id}>
-                <GameCard game={game} />
+                <GameCard game={game} isCompetition={true} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -71,4 +75,4 @@ const GamesSection = () => {
   );
 };
 
-export default GamesSection;
+export default CompetitionsSection;
