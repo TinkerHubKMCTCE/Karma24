@@ -101,10 +101,13 @@ const competitions = [
     title: "Mr and Miss Karma",
     dateTime: "",
     image: mrkarma,
-    description: [],
+    description: [
+      "Exclusivley for KMCT Students",
+      "First round will be held on 27 Feb 2024",
+    ],
     prize: "1st Prize: ₹5000",
     fee: 0,
-    registerLink: "",
+    registerLink: "https://forms.gle/wX1NAgYtv1y7a13a6",
   },
 ];
 
