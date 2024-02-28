@@ -13,8 +13,8 @@ const games = [
     description: [],
     image: pes,
     fee: 30,
+    registerLink: "https://wa.me/+919188011987",
     prize: "1st Prize: ₹800, 2nd Prize: ₹400",
-    registerLink: "https://rzp.io/l/SgMTE1mLQW",
   },
   // {
   //   id: "mini-miltia",
@@ -23,8 +23,8 @@ const games = [
   //   description: [],
   //   image: pes,
   //   fee: 20,
-  //   prize: "1st Prize: ₹800, 2nd Prize: ₹400",
-  // registerLink:"",
+  // registerLink:"https://wa.me/+919188011987",
+  // prize: "1st Prize: ₹800, 2nd Prize: ₹400",
   // },
   {
     id: "penalty-shootout",
@@ -33,8 +33,8 @@ const games = [
     description: [],
     image: penalty,
     fee: 20,
+    registerLink: "https://wa.me/+919188011987",
     prize: "1st Prize: ₹800, 2nd Prize: ₹400",
-    registerLink:"https://rzp.io/l/o9fQvelcf5",
   },
   {
     id: "basketball",
@@ -43,8 +43,8 @@ const games = [
     description: [],
     image: basketball,
     fee: 20,
+    registerLink: "https://wa.me/+919188011987",
     prize: "1st Prize: ₹400",
-    registerLink:"https://rzp.io/l/UXVqh9q",
   },
   {
     id: "carroms",
@@ -53,8 +53,8 @@ const games = [
     description: [],
     image: carroms,
     fee: 50,
+    registerLink: "https://wa.me/+919188011987",
     prize: "1st Prize: ₹500, 2nd Prize: ₹400",
-    registerLink:"https://rzp.io/l/FDaNT9V",
   },
   {
     id: "Darts",
@@ -62,9 +62,9 @@ const games = [
     dateTime: "02 MARCH 2024",
     description: [],
     image: darts,
-    prize :"Exciting prizes",
+    prize: "Exciting prizes",
+    registerLink: "https://wa.me/+919188011987",
     fee: 30,
-    registerLink:"https://rzp.io/l/E0QOCISP",
   },
   {
     id: "touch-me-not",
@@ -72,9 +72,9 @@ const games = [
     dateTime: "02 MARCH 2024",
     description: [],
     image: touch,
-    prize :"Exciting prizes",
+    prize: "Exciting prizes",
+    registerLink: "https://wa.me/+919188011987",
     fee: 20,
-    registerLink:"https://rzp.io/l/iomO96saD",
   },
   // {
   //   id: "wisper-challenge",
@@ -83,8 +83,8 @@ const games = [
   //   description: [],
   //   image: pes,
   //   fee: 50,
-  //   prize: "1st Prize: ₹400",
-  // registerLink:"",
+  // registerLink:"https://wa.me/+919188011987",
+  // prize: "1st Prize: ₹400",
   // },
   // {
   //   id: "spell-bee",
@@ -92,8 +92,8 @@ const games = [
   //   dateTime: "02 MARCH 2024",
   //   description: ["Exciting prizes"],
   //   image: pes,
-  //   fee: 0,
-  // registerLink:"",
+  // registerLink:"https://wa.me/+919188011987",
+  // fee: 0,
   // },
 ];
 
