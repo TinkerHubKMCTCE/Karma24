@@ -12,7 +12,7 @@ const EventCard = ({ event }) => {
       onClick={() => navigate(`/events/${event.id}`)}
       className="p-8 rounded-3xl mx-auto workshop-item"
       style={{
-        backgroundImage: `url(${event.image})`,
+        backgroundImage: `url(${event.image1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
