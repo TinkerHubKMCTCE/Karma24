@@ -63,7 +63,7 @@ const Hero = () => {
                 />
               </motion.div>
             </div>
-            <motion.div
+            {/* <motion.div
               // staggered animation while in view
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ const Hero = () => {
               <Countdown targetDate={targetDate} title="Hours" />
               <Countdown targetDate={targetDate} title="Minutes" />
               <Countdown targetDate={targetDate} title="Seconds" />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
