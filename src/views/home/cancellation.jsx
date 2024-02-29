@@ -37,7 +37,7 @@ const CancelPage = () => {
       </p>
       <h1 className="text-3xl font-bold">Refund</h1>
       <p className="py-2 text-lg leading-relaxed">
-        <ul>
+        <ul className="list-disk">
         <li>In case the cancellation process has succeeded, the refund amount will
         be transferred to the bank account via Gpay
         </li>
