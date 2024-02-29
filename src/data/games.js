@@ -1,3 +1,4 @@
+import bgmi from "../assets/images/games/bgmi.jpg";
 import pes from "../assets/images/games/pes.jpg";
 import penalty from "../assets/images/games/penalty.jpg";
 import basketball from "../assets/images/games/basketball.jpg";
@@ -9,6 +10,16 @@ import mini from "../assets/images/games/mini.jpeg";
 import spell from "../assets/images/games/spell.jpeg";
 
 const games = [
+  {
+    id: "bgmi",
+    title: "BGMI",
+    dateTime: "02 MARCH 2024",
+    description: [],
+    image: bgmi,
+    fee: 30,
+    registerLink: "https://wa.me/+919188011987",
+    prize: "Prizes worth ₹1000",
+  },
   {
     id: "pes",
     title: "PES",
