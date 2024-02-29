@@ -37,11 +37,21 @@ const CancelPage = () => {
       </p>
       <h1 className="text-3xl font-bold">Refund</h1>
       <p className="py-2 text-lg leading-relaxed">
-        - In case the cancellation process has succeeded, the refund amount will
-        be transferred to the bank account via Gpay (same account that money was
-        transfered from). <br /> In case the minimum number of participants has not
-        been met, the full amount will be refunded. <br /> We are not responsible for
-        any errors or misinterpretations on your part.
+        <ul className="list-disc pl-6">
+        <li>In case the cancellation process has succeeded, the refund amount will
+        be transferred to the bank account via Gpay
+        </li>
+        <li>
+        In case the minimum number of participants has not
+        been met, the full amount will be refunded
+        </li>
+        <li>
+        We are not responsible for any errors or misinterpretations on your part.
+        </li>
+        <li>
+        A refund will not be issued unless the event is canceled.
+        </li>
+        </ul>
       </p>
     </div>
   );
