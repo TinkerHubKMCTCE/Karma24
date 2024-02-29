@@ -17,7 +17,7 @@ const games = [
     description: [],
     image: bgmi,
     fee: 30,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink: "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20BGMI%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "Prizes worth ₹1000",
   },
   {
