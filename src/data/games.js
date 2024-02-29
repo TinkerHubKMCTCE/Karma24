@@ -17,7 +17,8 @@ const games = [
     description: [],
     image: bgmi,
     fee: 30,
-    registerLink: "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20BGMI%0A%0A%5BFrom%20Karma24%20Website%5D",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20BGMI%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "Prizes worth ₹1000",
   },
   {
@@ -27,7 +28,8 @@ const games = [
     description: [],
     image: pes,
     fee: 30,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20PES%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "1st Prize: ₹800, 2nd Prize: ₹400",
   },
   {
@@ -37,7 +39,8 @@ const games = [
     description: [],
     image: mini,
     fee: 20,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Mini%20Miltia%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "Exciting prizes",
   },
   {
@@ -47,7 +50,8 @@ const games = [
     description: [],
     image: penalty,
     fee: 20,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Penalty%20Shootout%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "1st Prize: ₹800, 2nd Prize: ₹400",
   },
   {
@@ -57,7 +61,8 @@ const games = [
     description: [],
     image: basketball,
     fee: 20,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Basketball%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "1st Prize: ₹400",
   },
   {
@@ -67,7 +72,8 @@ const games = [
     description: [],
     image: carroms,
     fee: 50,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Carroms%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "Exciting prizes",
   },
   {
@@ -77,7 +83,8 @@ const games = [
     description: [],
     image: darts,
     prize: "Exciting prizes",
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Darts%0A%0A%5BFrom%20Karma24%20Website%5D",
     fee: 10,
   },
   {
@@ -87,7 +94,8 @@ const games = [
     description: [],
     image: touch,
     prize: "Exciting prizes",
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Touch%20me%20not%0A%0A%5BFrom%20Karma24%20Website%5D",
     fee: 20,
   },
   {
@@ -97,7 +105,8 @@ const games = [
     description: [],
     image: whisper,
     fee: 40,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Wisper%20Challenge%0A%0A%5BFrom%20Karma24%20Website%5D",
     prize: "Exciting prizes",
   },
   {
@@ -106,7 +115,8 @@ const games = [
     dateTime: "02 MARCH 2024",
     description: [],
     image: spell,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink:
+      "https://api.whatsapp.com/send/?phone=%2B919188011987&text=Hello%0AI%20want%20to%20register%20for%20Spell%20Bee%0A%0A%5BFrom%20Karma24%20Website%5D",
     fee: 0,
     prize: "Exciting prizes",
   },
