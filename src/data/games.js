@@ -17,7 +17,7 @@ const games = [
     description: [],
     image: bgmi,
     fee: 30,
-    registerLink: "https://wa.me/+919188011987",
+    registerLink: "https://chat.whatsapp.com/CwtboLFWDLA1W5jmpdH5Hi",
     prize: "Prizes worth ₹1000",
   },
   {
