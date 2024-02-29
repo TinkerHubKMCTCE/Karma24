@@ -1,9 +1,13 @@
 import hackImage from "../assets/events/event-hackathon.jpg";
-import caddImage from "../assets/events/caddImage.png";
+import caddImage from "../assets/events/cadd.jpg";
+import caddImage1 from "../assets/events/caddImage.png";
 import vrImage from "../assets/events/event-vr.jpg";
-import techquiz from "../assets/events/techquiz.png";
-import expo from "../assets/events/expo.png";
-import bridgeit from "../assets/events/bridgeit.png";
+import techquiz from "../assets/events/quiz.jpg";
+import techquiz1 from "../assets/events/techquiz.png";
+import expo from "../assets/events/expo.jpg";
+import expo1 from "../assets/events/expo.png";
+import bridgeit from "../assets/events/bridgeit.jpg";
+import bridgeit1 from "../assets/events/bridgeit.png";
 
 const events = [
   {
@@ -11,6 +15,7 @@ const events = [
     title: "Bridge It",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
     image: bridgeit,
+    image1: bridgeit1,
     description: ["Team of 3 or 4 members","Free registartion"],
     fee: 0,
     prize: "1st Prize: ₹3000, 2nd Prize: ₹1500",
@@ -21,6 +26,7 @@ const events = [
     title: "HACKATHON",
     dateTime: "01 MARCH 2024, 10 AM - 02 MARCH 2024, 10 AM",
     image: hackImage,
+    image1: hackImage,
     description: [
       "Stack: Software",
       "Team of 2 to 4 members",
@@ -35,6 +41,7 @@ const events = [
     title: "Cadd Modeling",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
     image: caddImage,
+    image1: caddImage1,
     description: ["Individual Participation","Free registartion"],
     fee: 0,
     prize: "1st Prize: ₹2000, 2nd Prize: ₹1000",
@@ -45,6 +52,7 @@ const events = [
     title: "VR EXPERIENCE",
     dateTime: "02 MARCH 2024, 10 AM - 4 PM",
     image: vrImage,
+    image1: vrImage,
     description: ["6+ Adeventures and Games"],
     fee: 49,
     registerLink: "https://rzp.io/l/ZfsNGX2",
@@ -54,6 +62,7 @@ const events = [
     title: "Tech Quiz",
     dateTime: "02 MARCH 2024, 2 PM - 4 PM",
     image: techquiz,
+    image1: techquiz1,
     description: ["Individual Participation","Free registartion"],
     fee: 0,
     prize: "1st Prize: ₹2000, 2nd Prize: ₹1000",
@@ -64,6 +73,7 @@ const events = [
     title: "EXPO",
     dateTime: "02 MARCH 2024, 10 AM - 3 PM",
     image: expo,
+    image1: expo1,
     description: [
       "For ITI, Polytechnic and Engineering students",
       "A team of 3 or 4 members",
